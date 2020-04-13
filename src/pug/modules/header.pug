@@ -1,18 +1,32 @@
 - var navigation = [{'title': 'Для кого', 'toId': 'forWho'}, {'title': 'О чем курс', 'toId': 'about'}, {'title': 'Процесс обучения', 'toId': 'process'}, {'title': 'Результаты обучения', 'toId': 'result'}, {'title': 'Отзывы', 'toId': 'reviews'}, {'title': 'Гарантии', 'toId': 'guarantees'}, {'title': 'Цены и пакеты', 'toId': 'pricing'}]
 
 header.header
-    .container.header__container
-        // Logo
-        .header__logo
-            a.logo(href="/")
-                img.logo__img(src="/assets/images/omg-logo.png", alt="Omg logo")
-        // End logo
+    // Navbar
+    .header__navbar
+        // Navbar container
+        .container.header__navbar-container
+            // Logo
+            .header__logo
+                a.logo(href="/")
+                    img.logo__img(src="/assets/images/omg-logo.png", alt="Omg logo")
+            // End logo
 
-        // Navigation
-        .header__navigation
-            nav.navigation
-                ul.navigation__list
-                    each val in navigation
-                        li.navigation__item
-                            a.navigation__link(href=`#${val.toId}`)= val.title
-        // End navigation
+            // Navigation
+            .header__navigation
+                nav.navigation
+                    ul.navigation__list
+                        each val in navigation
+                            li.navigation__item.before-bg
+                                a.navigation__link.hover-color(href=`#${val.toId}`)= val.title
+            // End navigation
+        // End navbar container
+    // End navbar
+
+    // Content
+    .header__content
+        // Content container
+        .header__content-container
+            .header__heading
+                
+        // End content container
+    // End content

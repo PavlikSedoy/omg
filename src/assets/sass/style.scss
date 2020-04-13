@@ -6,6 +6,34 @@
 // General styles
 html {
   font-family: $RobotoFont;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// Theme colors
+.theme {
+  // for purple
+  &--purple {
+    .before-bg {
+      &:before {
+        background: $purple;
+      }
+    }
+
+    .hover-color {
+      &:hover, &:active, &:focus {
+        color: $purple;
+      }
+    }
+  }
 }
 
 //Модули
