@@ -106,7 +106,7 @@ const plugins = () => {
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  entry: './assets/js/scripts.js',
+  entry: './assets/js/main.js',
   output: {
     filename: './assets/js/' + filename('js'),
     path: path.resolve(__dirname, 'dist')
