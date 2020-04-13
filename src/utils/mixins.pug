@@ -1,0 +1,156 @@
+mixin icon(name)
+    svg(class="icon--" + name)
+        use(xlink:href="/assets/images/svg/sprite.svg#" + name)
+
+// User projects pages (aside projects)
+mixin aside-project(address, square, id, active)
+    if (active)
+        article.projects-list__projects-item.aside-project.active(href="#projectName")
+            .aside-project__address= address
+            .aside-project__props #{square}m2 / ID#{square}
+            button.aside-project__close
+                include ../../assets/images/svg/close.svg
+    else
+        article.projects-list__projects-item.aside-project(href="#projectName")
+            .aside-project__address= address
+            .aside-project__props #{square}m2 / ID#{square}
+            button.aside-project__close
+                include ../../assets/images/svg/close.svg
+
+// User project tabs item
+mixin project-tab-item(title, titleInfo, project, desc, btnName, editor)
+    .my-projects__tab-item.project-tab-item
+        if title
+            h3.project-tab-item__title
+                span= title
+                if titleInfo
+                    .project-tab-item__title-info
+                        include ../../assets/images/svg/info.svg
+        .project-tab-item__content
+            if (project)
+                // Project content
+                .project-tab-item__project-content
+                    // Project image
+                    .project-tab-item__project-img
+                        if (editor)
+                            img(src="/assets/images/user-ready-templates/template-1.jpg", alt="Classic style")
+                            a.project-tab-item__show-3d.show-3d(href="/")
+                                <svg width="30" height="28">
+                                <use xlink:href="/assets/images/svg/sprite.svg#cube"></use>
+                                </svg>
+                        else
+                            <svg width="50" height="56">
+                            <use xlink:href="/assets/images/svg/sprite.svg#big-silver-cube"></use>
+                            </svg>
+                    // End project image
+
+                    // Project description
+                    .project-tab-item__project-desc
+                        .project-tab-item__project-address Kreshatyk str, 1
+                        .project-tab-item__project-props 100 m2 / ID54382
+                        .project-tab-item__project-location Tel Aviv, Israel
+                    // End project description
+                // End project content
+
+                // Project controls
+                .project-tab-item__project-control
+                    .project-tab-item__project-created
+                        if projectPageNumber == 42
+                            | The project is up for auction 10/01/20
+                        else
+                            | The project was created on 10/01/20
+
+                    button.btn.btn__type_seventh.btn__type_seventh--transparent
+                        .btn-content
+                            span Actions
+                            .btn-arrow
+                                <svg width="30" height="28">
+                                <use xlink:href="/assets/images/svg/sprite.svg#arrow-down"></use>
+                                </svg>
+                        ul.btn-dropdown
+                            if projectPageNumber == 36
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/edit-project.svg
+                                        span Edit the project
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/image.svg
+                                        span View images
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/edit.svg
+                                        span Edit data
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/finish-project.svg
+                                        span Finish project
+                            if projectPageNumber == 42
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/edit-project.svg
+                                        span Edit the project
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/add-desc.svg
+                                        span Add description
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/image.svg
+                                        span Edit images
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/edit.svg
+                                        span Edit data
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/delete.svg
+                                        span Delete from auction
+                            else
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/edit-project.svg
+                                        span Edit the project
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/edit.svg
+                                        span Edit data
+                                li
+                                    a(href="/")
+                                        div
+                                            include ../../assets/images/svg/finish-project.svg
+                                        span Finish project
+                // End project controls
+                if projectEditDesc == 'done'
+                    // Description
+                    .project-tab-item__desc-full
+                        .project-tab-item__desc-header
+                            h5.project-tab-item__desc-title Description
+                            time.project-tab-item__desc-date 10/01/20
+                        .project-tab-item__desc-body
+                            p Hello! Want to ask you a few questions about this project. I can do everything accept pergola, because I do not have experiance in creating such things but I can recommend good master and provide a portfolio of this guy if you want. I can start this project even tomorrow.
+
+                    // End description
+            else
+                .project-tab-item__desc
+                    p= desc
+                .project-tab-item__control
+                    if btnName == 'Auction'
+                        a.btn.btn__type_fourth(href="/")
+                            .bg-gradient
+                            span= btnName
+                    if btnName == 'Hire'
+                        a.btn.btn__type_fourth.btn__type_fourth--hire(href="/")
+                            .bg-gradient
+                            span= btnName
