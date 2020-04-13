@@ -118,7 +118,7 @@ module.exports = {
       '@': path.resolve(__dirname, 'src'),
       '@styles' : path.resolve(__dirname, 'src/assets/sass'),
       '@images' : path.resolve(__dirname, 'src/assets/images'),
-      '@images' : path.resolve(__dirname, 'src/assets/images/svg')
+      '@svg' : path.resolve(__dirname, 'src/assets/images/svg')
     }
   },
   optimization: optimization(),

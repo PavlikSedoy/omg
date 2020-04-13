@@ -1,7 +1,12 @@
+@import "utils/mixins";
 @import "utils/fonts";
 @import "utils/vars";
-@import "utils/mixins";
 @import "utils/libs";
+
+// General styles
+html {
+  font-family: $RobotoFont;
+}
 
 //Модули
 @import "modules/modules";
