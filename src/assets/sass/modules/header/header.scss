@@ -7,6 +7,7 @@
     left: 0;
     top: 0;
     width: 100%;
+    z-index: z('navbar');
   }
 
   &__navbar-container {
@@ -20,6 +21,14 @@
     height: 80px;
   }
   // End navbar
+
+  // Content
+  &__content {
+    position: relative;
+    z-index: z('content');
+    padding: 100px 0 50px;
+  }
+  // End content
 }
 
 // Logo

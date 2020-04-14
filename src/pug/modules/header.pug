@@ -25,8 +25,35 @@ header.header
     // Content
     .header__content
         // Content container
-        .header__content-container
+        .header__content-container.container
+            // Heading
             .header__heading
-                
+                h2.header__up-title.up-title Обучающий курс:
+                h1.header__title.head-title Косметолог в Киеве без медицинского образования
+                h3.header__subtitle.head-subtitle Курсы косметологии разработаны как для людей без медицинского образования так и для медиков разной категории.
+            // End heading
+
+            // Form
+            form.header__form(action="/", method="post")
+                // Input item
+                .input-group.header__input
+                    input.input-group__input.input-border#headerName(type="text", placeholder="Ваше имя")
+                    label.input-group__label(for="headerName") Ваше имя
+                // End input item
+
+                // Input item
+                .input-group.header__input
+                    input.input-group__input.input-group__input--phone.input-border#headerPhone(type="text", placeholder="Ваш телефон", inputmode="tell")
+                    label.input-group__label(for="headerPhone") Ваш телефон
+                // End input item
+
+                // Button
+                button.button(type="submit")
+                    .button__shadow.bg
+                    .button__bottom-bg.button-gradient
+                    .button__bottom-bg.button__bottom-bg--hover.button-hover-gradient
+                    .button__content Заказать звонок
+                // End button
+            // End form
         // End content container
     // End content

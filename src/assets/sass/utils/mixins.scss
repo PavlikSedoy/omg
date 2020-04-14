@@ -27,7 +27,10 @@
   }
 }
 $z-indexes: (
-  "content"
+  "navbar",
+  "content",
+  "bg",
+  "shadow"
 );
 
 @mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {
