@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  overflow: hidden;
 
   // Navbar
   &__navbar {
@@ -215,3 +216,36 @@
   }
 }
 // End hamburger menu
+
+// Mobile menu
+.mobile-menu {
+  @include cubic-first;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  height: calc(100vh - 60px);
+  width: 100%;
+  background: $white;
+  z-index: z('modals');
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+
+  &--active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__button {
+    margin-bottom: 50px;
+  }
+}
+// End mobile menu
