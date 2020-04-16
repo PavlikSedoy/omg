@@ -1,0 +1,32 @@
+// Header
+.header {
+  &__teacher {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  &__navbar {
+    overflow: hidden;
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+}
+// End header
+
+// Navigation
+.navigation {
+  &__item {
+    margin: 0 8px;
+
+    &:before {
+      left: -10px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+  }
+}
+// End navigation

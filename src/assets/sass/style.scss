@@ -75,6 +75,10 @@ h1, h2, h3, h4, h5 {
         background: 50% 50%/contain no-repeat url('/assets/images/svg/dot.svg');
       }
     }
+
+    .header {
+      background: 50% 50%/cover no-repeat url("/assets/images/header/bg.svg");
+    }
   }
 }
 // End theme colors

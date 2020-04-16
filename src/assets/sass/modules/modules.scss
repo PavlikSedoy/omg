@@ -5,11 +5,19 @@
 
 // Media
 @media screen and (max-width: 1199px) {
+  .head-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
   @import "container/container-max-1199";
+  @import "header/header-max-1199";
 }
 
 @media screen and (max-width: 991px) {
   @import "container/container-max-991";
+  @import "header/header-max-991";
+  @import "scroll/scroll-to-991";
 }
 
 @media screen and (max-width: 767px) {

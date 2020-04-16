@@ -1,4 +1,4 @@
-- var navigation = [{'title': 'Для кого', 'toId': 'forWho'}, {'title': 'О чем курс', 'toId': 'about'}, {'title': 'Процесс обучения', 'toId': 'process'}, {'title': 'Результаты обучения', 'toId': 'result'}, {'title': 'Отзывы', 'toId': 'reviews'}, {'title': 'Гарантии', 'toId': 'guarantees'}, {'title': 'Цены и пакеты', 'toId': 'pricing'}]
+- var navigation = [{'title': 'Для кого', 'toId': 'forWho'}, {'title': 'О чем курс', 'toId': 'about'}, {'title': 'Процесс обучения', 'toId': 'process'}, {'title': 'Результаты обучения', 'toId': 'result'}, {'title': 'Отзывы', 'toId': 'reviews'},{'title': 'Галерея', 'toId': 'gallery'}, {'title': 'Гарантии', 'toId': 'guarantees'}, {'title': 'Цены и пакеты', 'toId': 'pricing'}]
 
 header.header
     // Navbar
@@ -19,6 +19,15 @@ header.header
                             li.navigation__item.before-bg
                                 a.navigation__link.hover-color(href=`#${val.toId}`)= val.title
             // End navigation
+
+            // Hamburger menu
+            .header__hamburger.hamburger
+                input#hamburger.hamburger__check(type="checkbox")
+                .hamburger__lines
+                    span.hamburger__line.hamburger__line--first.bg
+                    span.hamburger__line.hamburger__line--second.bg
+                    span.hamburger__line.hamburger__line--third.bg
+            // End hamburger menu
         // End navbar container
     // End navbar
 
@@ -59,7 +68,7 @@ header.header
             // Header teacher
             .header__teacher
                 // Box
-                .border-out.card
+                .border-out.card.header__card
                     // Image
                     .card__image.figure-image
                         img.figure-image__img(src="/assets/images/header/teacher.jpg", alt="Teacher photo")
@@ -87,3 +96,23 @@ header.header
         a.scroll__link.bg.before-bg(href="#")
             .scroll__link-figure
     // End scroll block
+
+    // Mobile menu
+    #mobile-menu.mobile-menu
+        .container.mobile-menu__container
+            // Mobile navigation
+            nav.navigation
+                ul.navigation__list.navigation__list--mobile-nav
+                    each val in navigation
+                        li.navigation__item.navigation__item--mobile-nav.before-bg
+                            a.navigation__link.navigation__link--mobile-nav.hover-color(href=`#${val.toId}`)= val.title
+            // End mobile navigation
+
+            // Button
+            button.button.mobile-menu__button(type="submit")
+                .button__shadow.bg
+                .button__bottom-bg.button-gradient
+                .button__bottom-bg.button__bottom-bg--hover.button-hover-gradient
+                .button__content Заказать звонок
+            // End button
+    // End mobile menu
