@@ -20,6 +20,7 @@ ul {
 
 h1, h2, h3, h4, h5 {
   font-family: $RubikFont;
+  margin: 0;
 }
 
 // Theme colors
@@ -57,6 +58,22 @@ h1, h2, h3, h4, h5 {
 
     .button-hover-gradient {
       background: linear-gradient(180deg, #3C2E65 0%, #635194 100%);
+    }
+
+    .line-border {
+      border-color: rgba($purple, .3);
+    }
+
+    .border-out {
+      &:before, &:after {
+        border-color: rgba($purple, .3);
+      }
+    }
+    
+    .card__info {
+      li:before {
+        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot.svg');
+      }
     }
   }
 }
@@ -107,11 +124,11 @@ h1, h2, h3, h4, h5 {
     border-radius: $inputsRadius;
     border-top-right-radius: 0px;
     outline: none;
-    padding: 22px 32px;
+    padding: 20px 32px;
     color: $dark;
     font-size: 17px;
     font-family: $RubikFont;
-    width: 100%;
+    width: calc(100% - 66px);
 
     &:focus {
       & + .input-group__label {

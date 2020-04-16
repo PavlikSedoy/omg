@@ -1,0 +1,100 @@
+// Card
+.card {
+  background: $white;
+  border-radius: 0 $inputsRadius;
+  box-shadow: 0px 4px 74px rgba($black, .17);
+  //overflow: hidden;
+  position: relative;
+
+  // Image
+  &__image {
+    width: 100%;
+  }
+
+  // Content
+  &__content {
+    padding: 15px 40px 40px;
+  }
+
+  // Heading
+  &__heading {
+    padding-bottom: 15px;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    color: $gray;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 5px;
+  }
+
+  &__info {
+    ul {
+      margin: 15px 0 0;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      font-size: 14px;
+      line-height: 20px;
+      color: $gray;
+      margin-top: 10px;
+
+      &:before {
+        @include pseudo;
+        left: -22px;
+        top: 4px;
+        width: 12px;
+        height: 12px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  // End content
+}
+// End card
+
+// Figure image
+.figure-image {
+
+  &__img {
+    width: 100%;
+    border-radius: 0 $inputsRadius;
+  }
+}
+// End figure image
+
+// Border outside card/image
+.border-out {
+  &:before, &:after {
+    @include pseudo;
+    border: 1px solid transparent;
+    border-radius: 0 $inputsRadius;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &:before {
+    left: -15px;
+    top: -15px;
+  }
+
+  &:after {
+    left: 15px;
+    top: 15px;
+  }
+}
+// End Border outside card/image

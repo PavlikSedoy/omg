@@ -23,12 +23,67 @@
   // End navbar
 
   // Content
+  &__content-container {
+    display: grid;
+    grid-template-columns: 575px calc(100% - 575px);
+    grid-template-areas:
+      "heading teacher"
+      "head-form teacher";
+  }
+
   &__content {
     position: relative;
     z-index: z('content');
     padding: 100px 0 50px;
+    min-height: calc(100vh - 163px);
+  }
+
+  &__heading {
+    grid-area: heading;
+    align-self: end;
+    padding-bottom: 25px;
+  }
+
+  &__title {
+    margin-top: 14px;
+  }
+
+  &__subtitle {
+    margin-top: 30px;
+    width: 465px;
+  }
+
+  &__form {
+    grid-area: head-form;
+    justify-self: start;
+    align-self: start;
+    padding-top: 25px;
+    width: 460px;
+  }
+
+  &__input {
+    margin-top: 15px;
+    width: 100%;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+  }
+
+  &__teacher {
+    grid-area: teacher;
+    justify-self: end;
+    width: 460px;
   }
   // End content
+  
+  &__scroll {
+    position: relative;
+  }
 }
 
 // Logo

@@ -48,12 +48,42 @@ header.header
                 // End input item
 
                 // Button
-                button.button(type="submit")
+                button.button.header__button(type="submit")
                     .button__shadow.bg
                     .button__bottom-bg.button-gradient
                     .button__bottom-bg.button__bottom-bg--hover.button-hover-gradient
                     .button__content Заказать звонок
                 // End button
             // End form
+
+            // Header teacher
+            .header__teacher
+                // Box
+                .border-out.card
+                    // Image
+                    .card__image.figure-image
+                        img.figure-image__img(src="/assets/images/header/teacher.jpg", alt="Teacher photo")
+                    // End image
+
+                    // Content
+                    .card__content
+                        .card__heading.line-border
+                            h4.card__subtitle Врач-Косметолог
+                            h3.card__title ТАТЬЯНА ШИШЛАКОВА
+                        .card__info
+                            ul
+                                li <b>2011 г.</b> – курсы косметологии и мезотерапии, г. Киев;
+                                li <b>2012 г.</b> – интернатура по специальности «Дерматовенерология».
+                                li <b>2015 г.</b> – теоретический курс «Контурная пластика с применением внутридермальных имплантатов Repleri компании СА-Клиник»;
+                                li <b>2011 г.</b> – международная конференция «Региональные подходы к оптимизации дерматовенерологической помощи в Украине».
+                    // End content
+                // End box
+            // End header teacher
         // End content container
     // End content
+
+    // Scroll block
+    .header__scroll.scroll.bg
+        a.scroll__link.bg.before-bg(href="#")
+            .scroll__link-figure
+    // End scroll block
