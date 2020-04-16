@@ -1,0 +1,206 @@
+html {
+  font-family: $RobotoFont;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $RubikFont;
+  margin: 0;
+}
+
+// Theme colors
+.theme {
+  // for purple
+  &--purple {
+    .before-bg {
+      &:before {
+        background: $purple;
+      }
+    }
+
+    .hover-color {
+      &:hover, &:active, &:focus {
+        color: $purple;
+      }
+    }
+
+    .input-border {
+      @include cubic-first;
+      border: 1px solid rgba($purple, .25);
+
+      &:hover, &:focus, &:active {
+        border-color: $purple;
+      }
+    }
+
+    .button-gradient {
+      background: linear-gradient(180deg, #5B4696 0%, #9582CC 100%);
+    }
+
+    .bg {
+      background: $purple;
+    }
+
+    .button-hover-gradient {
+      background: linear-gradient(180deg, #3C2E65 0%, #635194 100%);
+    }
+
+    .line-border {
+      border-color: rgba($purple, .3);
+    }
+
+    .border-out {
+      &:before, &:after {
+        border-color: rgba($purple, .3);
+      }
+    }
+
+    .card__info {
+      li:before {
+        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot.svg');
+      }
+    }
+
+    .header {
+      background: 50% 50%/cover no-repeat url("/assets/images/header/bg.svg");
+    }
+  }
+}
+// End theme colors
+
+// Titles
+.head-title {
+  color: $purple;
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 52px;
+}
+
+.up-title {
+  color: $dark;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.head-subtitle {
+  color: $gray;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: $RobotoFont;
+  font-weight: 400;
+}
+// End titles
+
+// Inputs
+.input-group {
+  position: relative;
+
+  &__label {
+    @include cubic-first;
+    position: absolute;
+    left: 32px;
+    top: 7px;
+    font-size: 9px;
+    font-family: $RubikFont;
+    color: $gray;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__input {
+    background: $inputsBg;
+    border-radius: $inputsRadius;
+    border-top-right-radius: 0px;
+    outline: none;
+    padding: 20px 32px;
+    color: $dark;
+    font-size: 17px;
+    font-family: $RubikFont;
+    width: calc(100% - 66px);
+
+    &:focus {
+      & + .input-group__label {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    @include placeholder {
+      color: $gray;
+      font-size: 17px;
+      font-family: $RubikFont;
+    }
+  }
+}
+// End inputs
+
+// Buttons
+.button {
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  padding: 3px;
+
+  &__shadow {
+    position: absolute;
+    @include cubic-first;
+    left: 8px;
+    top: 8px;
+    width: calc(100% - 14px);
+    height: calc(100% - 4px);
+    opacity: .7;
+    filter: blur(14px);
+  }
+
+  &__bottom-bg {
+    position: absolute;
+    border-radius: $inputsRadius;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: z('bg');
+
+    &--hover {
+      @include cubic-first;
+      opacity: 0;
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 18px 42px;
+    z-index: z('content');
+    font-family: $RubikFont;
+    font-weight: 500;
+    font-size: 18px;
+    color: $white;
+    background: linear-gradient(180deg, rgba($white, 0) 0%, rgba($white, 0.08) 100%);
+    border-radius: $inputsRadius;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .button__bottom-bg--hover {
+      opacity: 1;
+    }
+
+    .button__shadow {
+      opacity: 1;
+    }
+  }
+}
+// End buttons

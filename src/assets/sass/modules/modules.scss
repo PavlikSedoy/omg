@@ -5,11 +5,7 @@
 
 // Media
 @media screen and (max-width: 1199px) {
-  .head-title {
-    font-size: 36px;
-    line-height: 42px;
-  }
-
+  @import "general/general-max-1199";
   @import "container/container-max-1199";
   @import "header/header-max-1199";
 }
@@ -25,44 +21,7 @@
 }
 
 @media screen and (max-width: 575px) {
-  // Heading
-  .up-title {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .head-title {
-    font-size: 25px;
-    line-height: 32px;
-  }
-  // End heading
-
-  // Inputs
-  .input-group {
-    &__input {
-      padding: 16px 25px;
-      font-size: 15px;
-
-      @include placeholder {
-        font-size: 15px;
-      }
-    }
-
-    &__label {
-      left: 25px;
-    }
-  }
-  // End inputs
-
-  // Buttons
-  .button {
-    &__content {
-      font-size: 16px;
-      padding: 16px 22px;
-    }
-  }
-  // End buttons
-
+  @import "general/general-max-575";
   @import "container/container-max-575";
   @import "header/header-max-575";
   @import "card/card-max-575";
