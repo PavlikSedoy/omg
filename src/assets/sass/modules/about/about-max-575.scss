@@ -1,0 +1,15 @@
+// Item
+.about-item {
+  &__in {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  &__content {
+    margin-left: 0;
+    margin-top: 20px;
+    flex-basis: 100%;
+  }
+}
+// End item

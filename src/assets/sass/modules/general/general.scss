@@ -25,6 +25,11 @@ main {
   overflow: hidden;
 }
 
+p {
+  line-height: 24px;
+  color: $gray;
+}
+
 // Theme colors
 .theme {
   // for purple
@@ -107,6 +112,18 @@ main {
     .for-who {
       background: 0% 0%/100% no-repeat url("/assets/images/for-who/bg.jpg");
     }
+
+    .about-item__icon-wr {
+      background: 50% 50%/100% no-repeat url("/assets/images/about/item-bg.svg");
+    }
+
+    .about-item__bg--dots {
+      background: 100% 100%/100% no-repeat url("/assets/images/about/dots-bg.svg");
+    }
+
+    .about {
+      background: 0% 0%/100% no-repeat url("/assets/images/about/section-bg.png");
+    }
   }
 }
 // End theme colors
@@ -166,6 +183,12 @@ main {
     font-size: 45px;
     padding-top: 40px;
   }
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 // End titles
 
