@@ -29,6 +29,12 @@
     height: 100%;
     z-index: z('bg');
   }
+
+  &--right {
+    .about-item__bg--dots {
+      left: -30px;
+    }
+  }
   
   &__icon-wr {
     flex-basis: 110px;

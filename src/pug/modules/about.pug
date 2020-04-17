@@ -8,7 +8,7 @@ section.about
         // Items
         .about__items
             each val in aboutItems
-                article(class="about__item about-item card-shadow " + (val['right'] ? 'about__item--right' : ''))
+                article(class="about__item about-item card-shadow " + (val['right'] ? 'about__item--right about-item--right' : ''))
                     .about-item__bg--dots
                     .about-item__in
                         // Icon
