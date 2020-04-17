@@ -16,7 +16,7 @@ p {
 .head-title {
   font-size: 25px;
   line-height: 32px;
-}
+}45px
 
 .section-title {
   &__count {
@@ -40,6 +40,11 @@ p {
   font-size: 17px;
   line-height: 24px;
 }
+
+.form-title {
+  font-size: 22px;
+  line-height: 30px;
+}
 // End heading
 
 // Inputs
@@ -47,6 +52,7 @@ p {
   &__input {
     padding: 16px 25px;
     font-size: 15px;
+    width: calc(100% - 53px);
 
     @include placeholder {
       font-size: 15px;

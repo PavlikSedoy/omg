@@ -19,6 +19,7 @@ import "@images/about/face-icon.svg";
 import "@images/about/item-bg.svg";
 import "@images/about/dots-bg.svg";
 import "@images/about/section-bg.png";
+import "@images/free-consultation/bg.png";
 
 // Scripts
 import '@js/modules/mobile-menu';

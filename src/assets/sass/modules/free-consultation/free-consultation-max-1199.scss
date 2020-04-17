@@ -1,0 +1,14 @@
+.free-consultation {
+  &__form {
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    flex-basis: calc(50% - 15px);
+  }
+
+  &__button {
+    margin: auto;
+    margin-top: 25px;
+  }
+}

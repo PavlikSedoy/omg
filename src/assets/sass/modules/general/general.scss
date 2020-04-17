@@ -124,6 +124,10 @@ p {
     .about {
       background: 0% 0%/100% no-repeat url("/assets/images/about/section-bg.png");
     }
+
+    .free-consultation__bg {
+      background: 50% 50%/cover no-repeat url("/assets/images/free-consultation/bg.png");
+    }
   }
 }
 // End theme colors
@@ -189,6 +193,12 @@ p {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+}
+
+.form-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 52px;
 }
 // End titles
 

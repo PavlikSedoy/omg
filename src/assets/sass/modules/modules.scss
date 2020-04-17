@@ -4,15 +4,18 @@
 @import "scroll/scroll";
 @import "for-who/for-who";
 @import "about/about";
+@import "free-consultation/free-consultation";
 
 // Media
 @media screen and (max-width: 1199px) {
   @import "general/general-max-1199";
   @import "container/container-max-1199";
   @import "header/header-max-1199";
+  @import "free-consultation/free-consultation-max-1199";
 }
 
 @media screen and (max-width: 991px) {
+  @import "general/general-max-991";
   @import "container/container-max-991";
   @import "header/header-max-991";
   @import "scroll/scroll-max-991";
@@ -22,6 +25,7 @@
 
 @media screen and (max-width: 767px) {
   @import "container/container-max-767";
+  @import "free-consultation/free-consultation-max-767";
 }
 
 @media screen and (max-width: 575px) {
@@ -31,5 +35,6 @@
   @import "card/card-max-575";
   @import "for-who/for-who-max-575";
   @import "about/about-max-575";
+  @import "free-consultation/free-consultation-max-575";
 }
 // End media

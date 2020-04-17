@@ -1,0 +1,26 @@
+.free-consultation
+    .container
+        .free-consultation__in.border-out
+            .free-consultation__bg
+            .free-consultation__content
+                h2.form-title.color Получить бесплатную консультацию
+                form.free-consultation__form(action="/")
+                    // Input item
+                    .input-group.free-consultation__input
+                        input.input-group__input.input-border#consultationName(type="text", placeholder="Ваше имя")
+                        label.input-group__label(for="consultationName") Ваше имя
+                    // End input item
+
+                    // Input item
+                    .input-group.free-consultation__input
+                        input.input-group__input.input-group__input--phone.input-border#freeconsultationPhone(type="text", placeholder="Ваш телефон", inputmode="tell")
+                        label.input-group__label(for="freeconsultationPhone") Ваш телефон
+                    // End input item
+
+                    // Button
+                    button.button.free-consultation__button(type="submit")
+                        .button__shadow.bg
+                        .button__bottom-bg.button-gradient
+                        .button__bottom-bg.button__bottom-bg--hover.button-hover-gradient
+                        .button__content Заказать звонок
+                    // End button
