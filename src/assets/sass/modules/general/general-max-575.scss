@@ -1,3 +1,7 @@
+section {
+  padding: 30px 0;
+}
+
 // Heading
 .up-title {
   font-size: 18px;
@@ -7,6 +11,24 @@
 .head-title {
   font-size: 25px;
   line-height: 32px;
+}
+
+.section-title {
+  &__count {
+    &-val {
+      font-size: 45px;
+    }
+
+    &-image {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  &__text {
+    font-size: 22px;
+    padding-top: 25px;
+  }
 }
 // End heading
 

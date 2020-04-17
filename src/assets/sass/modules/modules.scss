@@ -14,7 +14,8 @@
 @media screen and (max-width: 991px) {
   @import "container/container-max-991";
   @import "header/header-max-991";
-  @import "scroll/scroll-to-991";
+  @import "scroll/scroll-max-991";
+  @import "for-who/for-who-max-991";
 }
 
 @media screen and (max-width: 767px) {
@@ -26,5 +27,6 @@
   @import "container/container-max-575";
   @import "header/header-max-575";
   @import "card/card-max-575";
+  @import "for-who/for-who-max-575";
 }
 // End media
