@@ -1,0 +1,106 @@
+.for-who {
+  padding-top: 80px;
+  padding-bottom: 130px;
+
+  &__container {
+    z-index: z('content');
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // Image side
+  &__image-side {
+    flex-basis: calc(50% - 100px);
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    position: relative;
+  }
+  // End image side
+
+  // List side
+  &__list-side {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    margin-top: 15px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:before {
+      @include pseudo;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: $white;
+    }
+
+    &-content {
+      margin-left: 34px;
+      position: relative;
+      padding: 25px 27px 25px 36px;
+
+      p {
+        position: relative;
+        z-index: z('content');
+        font-size: 19px;
+        line-height: 25px;
+        font-weight: 500;
+        font-family: $RubikFont;
+        margin: 0;
+      }
+    }
+
+    &-image-bg {
+      position: absolute;
+      left: 14px;
+      top: 12px;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: $white;
+      box-shadow: 0px 4px 30px rgba($black, 0.05);
+      border-bottom-right-radius: $inputsRadius;
+    }
+
+    &-number {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      font-weight: 500;
+      color: $white;
+      font-family: $RubikFont;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  // End list side
+}
