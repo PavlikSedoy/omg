@@ -21,6 +21,10 @@ section {
   padding: 40px 0;
 }
 
+main {
+  overflow: hidden;
+}
+
 // Theme colors
 .theme {
   // for purple
@@ -86,6 +90,12 @@ section {
       color: $purple;
     }
 
+    .section-title__count-val {
+      background: linear-gradient(180deg, rgba(91, 70, 150, 0.2) 0%, rgba(91, 70, 150, 0) 94.27%, rgba(91, 70, 150, 0) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
     .for-who__item-number {
       background: 50% 50%/contain no-repeat url("/assets/images/for-who/list.jpg");
     }
@@ -139,7 +149,6 @@ section {
       font-size: 75px;
       font-family: $RubikFont;
       font-weight: 500;
-      opacity: .3;
     }
 
     &-image {
