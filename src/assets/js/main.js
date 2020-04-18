@@ -24,6 +24,7 @@ import '@images/process/Photo.jpg';
 import '@images/process/item-1.jpg';
 import '@images/process/item-2.jpg';
 import '@images/process/item-3.jpg';
+import '@images/process/section-bg.png';
 
 // Scripts
 import '@js/modules/mobile-menu';

@@ -158,6 +158,10 @@ p {
     .process-modules__item {
       border-color: rgba($purple, .3);;
     }
+
+    .process {
+      background: 0% 0%/cover no-repeat url("/assets/images/process/section-bg.png");
+    }
   }
 }
 // End theme colors
