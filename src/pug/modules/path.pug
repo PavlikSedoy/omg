@@ -5,36 +5,51 @@
         .path__top-wave
             include ../../assets/images/path/top-wave.svg
 
+        // Buttom wave
+        .path__bottom-wave
+            include ../../assets/images/path/bottom-wave.svg
+
         // Content
-        .container
+        .container.path__heading-container
             h3.path__subtitle Наша задача, чтобы косметолог получил не только документ, но и стал востребованным специалистом высокого уровня.
             h3.path__title Ваш путь к профессии мечты начинается здесь. Это не фантастика, это реальность.
     // End heading container
 
     // icon
     .path__circle-icon.circle-item
-        img.circle-item__item(src="/assets/images/result/icon-7.svg", alt="icon name")
+        img.circle-item__icon(src="/assets/images/result/icon-7.svg", alt="icon name")
 
     // Form container
-    .container.path__form-container
-        form.free-consultation__form(action="/")
-            // Input item
-            .input-group.free-consultation__input
-                input.input-group__input.input-border#consultationName(type="text", placeholder="Ваше имя")
-                label.input-group__label(for="consultationName") Ваше имя
-            // End input item
+    .path__form
+        .container.path__form-container
+            .free-consultation__in.border-out
+                .free-consultation__bg
+                .free-consultation__content
+                    h2.form-title.color Записаться на курс уже сегодня
 
-            // Input item
-            .input-group.free-consultation__input
-                input.input-group__input.input-group__input--phone.input-border#freeconsultationPhone(type="text", placeholder="Ваш телефон", inputmode="tell")
-                label.input-group__label(for="freeconsultationPhone") Ваш телефон
-            // End input item
+                    form.free-consultation__form(action="/")
+                        // Input item
+                        .input-group.free-consultation__input
+                            input.input-group__input.input-border#enrollName(type="text", placeholder="Ваше имя")
+                            label.input-group__label(for="enrollName") Ваше имя
+                        // End input item
 
-            // Button
-            button.button.free-consultation__button(type="submit")
-                .button__shadow.bg
-                .button__bottom-bg.button-gradient
-                .button__bottom-bg.button__bottom-bg--hover.button-hover-gradient
-                .button__content Заказать звонок
-            // End button
+                        // Input item
+                        .input-group.free-consultation__input
+                            input.input-group__input.input-group__input--phone.input-border#enrollPhone(type="text", placeholder="Ваш телефон", inputmode="tell")
+                            label.input-group__label(for="enrollPhone") Ваш телефон
+                        // End input item
+
+                        // Button
+                        button.button.free-consultation__button(type="submit")
+                            .button__shadow.bg
+                            .button__bottom-bg.button-gradient
+                            .button__bottom-bg.button__bottom-bg--hover.button-hover-gradient
+                            .button__content Заказать звонок
+                        // End button
+
+                    .free-consultation__action
+                        span.free-consultation__action-text Осталось
+                        .free-consultation__action-count.bg 5
+                        span.free-consultation__action-text свободных мест
     // End form container

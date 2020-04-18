@@ -36,5 +36,25 @@
     flex-basis: 290px;
   }
 
-  //
+  &__action {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    &-text {
+      font-weight: 500;
+      font-size: 19px;
+      font-family: $RubikFont;
+    }
+
+    &-count {
+      font-family: $RubikFont;
+      padding: 15px;
+      border-radius: 0 15px;
+      color: $white;
+      font-weight: 500;
+      font-size: 35px;
+      margin: 0 10px;
+    }
+  }
 }

@@ -1,16 +1,40 @@
 .path {
   position: relative;
+  padding-bottom: 220px;
   
   // Heading part
+  &__heading-container {
+    text-align: center;
+  }
+
   &__heading {
     position: relative;
-    padding: 100px 0 180px;
+    padding: 100px 0 330px;
+  }
+
+  &__subtitle {
+    margin: auto;
+    max-width: 710px;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 35px;
+    color: $white;
+  }
+
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 51px;
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 52px;
+    color: $white;
+    max-width: 985px;
   }
 
   // Bg
-  &__top-wave {
+  &__top-wave, &__bottom-wave {
     position: absolute;
-    bottom: calc(100% - 1px);
     left: 0;
     display: flex;
     align-items: flex-end;
@@ -20,17 +44,33 @@
       width: 100%;
     }
   }
+
+  &__top-wave {
+    bottom: calc(100% - 1px);
+  }
+
+  &__bottom-wave {
+    bottom: 0;
+  }
   // End bg
 
   // Circle icon
   &__circle-icon {
     position: absolute;
-    top: 0px;
+    top: -105px;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
     width: 210px;
     height: 210px;
   }
-
   // End heading part
+
+  // Form
+  &__form {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  // End form
 }

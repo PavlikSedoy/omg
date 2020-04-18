@@ -20,5 +20,11 @@
     left: 5px;
     border-radius: 0 70px;
   }
+
+  &--top-left-radius {
+    &:before, &:after {
+      border-radius: 150px 150px 0 60px;
+    }
+  }
 }
 // End figure border
