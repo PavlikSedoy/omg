@@ -1,0 +1,29 @@
+.circle-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  &:before,  &:after {
+    @include pseudo;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  &:before {
+    left: -30px;
+    top: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
+    opacity: 0.3;
+  }
+
+  &:after {
+    left: -15px;
+    top: -15px;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    opacity: .6;
+  }
+}

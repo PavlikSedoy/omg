@@ -1,0 +1,8 @@
+.result {
+  &__items {
+    grid-template-columns: 280px;
+    justify-content: center;
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+}

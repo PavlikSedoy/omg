@@ -131,7 +131,7 @@ p {
       background: 0% 0%/100% no-repeat url("/assets/images/for-who/bg.jpg");
     }
 
-    .about-item__icon-wr {
+    .about-item__icon-wr, .result-item__icon-wr {
       background: 50% 50%/100% no-repeat url("/assets/images/about/item-bg.svg");
     }
 
@@ -161,6 +161,18 @@ p {
 
     .process {
       background: 0% 0%/cover no-repeat url("/assets/images/process/section-bg.png");
+    }
+
+    .result {
+      background: 0% 0%/cover no-repeat url("/assets/images/result/section-bg.png");
+    }
+
+    .circle-item {
+      background: $purple;
+
+      &:before, &:after {
+        background: $purple;
+      }
     }
   }
 }
@@ -339,3 +351,7 @@ p {
   }
 }
 // End buttons
+
+.container {
+  z-index: z('content');
+}

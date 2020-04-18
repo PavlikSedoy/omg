@@ -102,5 +102,11 @@
     left: 15px;
     top: 15px;
   }
+
+  &--top-left-radius {
+    &:before, &:after {
+      border-radius: 150px 150px 0 $inputsRadius;
+    }
+  }
 }
 // End Border outside card/image

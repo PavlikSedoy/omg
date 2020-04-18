@@ -1,0 +1,36 @@
+.path {
+  position: relative;
+  
+  // Heading part
+  &__heading {
+    position: relative;
+    padding: 100px 0 180px;
+  }
+
+  // Bg
+  &__top-wave {
+    position: absolute;
+    bottom: calc(100% - 1px);
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  // End bg
+
+  // Circle icon
+  &__circle-icon {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 210px;
+    height: 210px;
+  }
+
+  // End heading part
+}

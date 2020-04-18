@@ -1,0 +1,46 @@
+.result {
+  padding-bottom: 200px;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-gap: 90px 20px;
+    justify-content: space-between;
+  }
+
+  &__items {
+    margin-top: 130px;
+  }
+  
+  &__item {
+    position: relative;
+  }
+}
+
+// Item
+.result-item {
+  background: $white;
+  border-radius: 150px 150px 0 $inputsRadius;
+  box-shadow: 0px 4px 30px rgba($black, 0.05);
+  padding: 55px 20px 50px;
+
+  &__icon-wr {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      height: 60px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+}
+// End item

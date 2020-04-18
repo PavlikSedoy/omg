@@ -2,10 +2,13 @@
 @import "header/header";
 @import "card/card";
 @import "scroll/scroll";
+@import "circle-item/circle-item";
 @import "for-who/for-who";
 @import "about/about";
 @import "free-consultation/free-consultation";
 @import "process/process";
+@import "result/result";
+@import "path/path";
 
 // Media
 @media screen and (max-width: 1199px) {
@@ -24,12 +27,14 @@
   @import "for-who/for-who-max-991";
   @import "about/about-max-991";
   @import "process/process-max-991";
+  @import "result/result-max-991";
 }
 
 @media screen and (max-width: 767px) {
   @import "container/container-max-767";
   @import "free-consultation/free-consultation-max-767";
   @import "process/process-max-767";
+  @import "result/result-max-767";
 }
 
 @media screen and (max-width: 575px) {

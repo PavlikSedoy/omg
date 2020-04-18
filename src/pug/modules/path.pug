@@ -1,0 +1,40 @@
+.path
+    // Heading container
+    .path__heading.bg
+        // Top wave
+        .path__top-wave
+            include ../../assets/images/path/top-wave.svg
+
+        // Content
+        .container
+            h3.path__subtitle Наша задача, чтобы косметолог получил не только документ, но и стал востребованным специалистом высокого уровня.
+            h3.path__title Ваш путь к профессии мечты начинается здесь. Это не фантастика, это реальность.
+    // End heading container
+
+    // icon
+    .path__circle-icon.circle-item
+        img.circle-item__item(src="/assets/images/result/icon-7.svg", alt="icon name")
+
+    // Form container
+    .container.path__form-container
+        form.free-consultation__form(action="/")
+            // Input item
+            .input-group.free-consultation__input
+                input.input-group__input.input-border#consultationName(type="text", placeholder="Ваше имя")
+                label.input-group__label(for="consultationName") Ваше имя
+            // End input item
+
+            // Input item
+            .input-group.free-consultation__input
+                input.input-group__input.input-group__input--phone.input-border#freeconsultationPhone(type="text", placeholder="Ваш телефон", inputmode="tell")
+                label.input-group__label(for="freeconsultationPhone") Ваш телефон
+            // End input item
+
+            // Button
+            button.button.free-consultation__button(type="submit")
+                .button__shadow.bg
+                .button__bottom-bg.button-gradient
+                .button__bottom-bg.button__bottom-bg--hover.button-hover-gradient
+                .button__content Заказать звонок
+            // End button
+    // End form container
