@@ -1,0 +1,15 @@
+.process {
+  &__items {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+}
+
+// Modules
+.process-modules {
+  &__title {
+    font-size: 25px;
+    top: -17px;
+  }
+}
+// End modules

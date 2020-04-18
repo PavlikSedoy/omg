@@ -37,8 +37,14 @@
   }
 
   &__info {
+    padding-top: 15px;
+
+    p {
+      font-size: 14px;
+    }
+
     ul {
-      margin: 15px 0 0;
+      margin: 0;
       padding-left: 0;
     }
 

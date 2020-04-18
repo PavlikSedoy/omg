@@ -1,0 +1,88 @@
+.process {
+  // General content
+  &__general-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    flex-basis: calc(50% - 50px);
+  }
+  
+  &__image {
+    position: relative;
+    flex-basis: 50%;
+  }
+  // End general content
+
+  // Items
+  &__items {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  // End items
+
+  &__modules {
+    margin-top: 100px;
+  }
+}
+
+// Modules
+.process-modules {
+  position: relative;
+  border: 1px solid transparent;
+  padding: 30px 70px 20px;
+  border-radius: 0 $inputsRadius;
+
+  &__title {
+    position: absolute;
+    left: 60px;
+    top: -23px;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 0 10px;
+  }
+
+  &__item {
+    display: flex;
+    padding: 40px 0;
+    border-bottom: 1px solid transparent;
+
+    & > div {
+      flex-basis: 50%;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      font-size: 14px;
+      line-height: 20px;
+      color: $gray;
+      margin-top: 10px;
+
+      &:before {
+        @include pseudo;
+        left: -22px;
+        top: 4px;
+        width: 12px;
+        height: 12px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+// End modules

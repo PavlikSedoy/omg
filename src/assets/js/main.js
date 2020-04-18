@@ -20,6 +20,10 @@ import '@images/about/item-bg.svg';
 import '@images/about/dots-bg.svg';
 import '@images/about/section-bg.png';
 import '@images/free-consultation/bg.png';
+import '@images/process/Photo.jpg';
+import '@images/process/item-1.jpg';
+import '@images/process/item-2.jpg';
+import '@images/process/item-3.jpg';
 
 // Scripts
 import '@js/modules/mobile-menu';

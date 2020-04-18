@@ -28,6 +28,12 @@ main {
 p {
   line-height: 24px;
   color: $gray;
+  margin: 0;
+  margin-top: 15px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 // Theme colors
@@ -75,9 +81,21 @@ p {
       &:before, &:after {
         border-color: rgba($purple, .3);
       }
+
+      &--before {
+        &:after {
+          display: none;
+        }
+      }
     }
 
     .card__info {
+      li:before {
+        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot.svg');
+      }
+    }
+
+    .process-modules__item {
       li:before {
         background: 50% 50%/contain no-repeat url('/assets/images/svg/dot.svg');
       }
@@ -127,6 +145,18 @@ p {
 
     .free-consultation__bg {
       background: 50% 50%/cover no-repeat url("/assets/images/free-consultation/bg.png");
+    }
+
+    .process-modules__title {
+      background: #FCFBFF;
+    }
+
+    .process__modules {
+      border-color: rgba($purple, .3);
+    }
+
+    .process-modules__item {
+      border-color: rgba($purple, .3);;
     }
   }
 }

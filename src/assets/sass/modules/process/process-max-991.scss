@@ -1,0 +1,36 @@
+.process {
+  // General content
+  &__general-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__content {
+    flex-basis: 100%;
+    order: 2;
+    margin-top: 40px;
+  }
+
+  &__image {
+    width: 300px;
+    order: 1;
+    margin-top: 30px;
+  }
+  // End general content
+}
+
+// Modules
+.process-modules {
+  &__item {
+    flex-wrap: wrap;
+
+    & > div {
+      flex-basis: 100%;
+    }
+  }
+
+  &__content {
+    margin-top: 20px;
+  }
+}
+// End modules

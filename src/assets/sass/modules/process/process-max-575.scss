@@ -1,0 +1,28 @@
+.process {
+  &__image {
+    flex-basis: 100%;
+    margin-top: 0;
+  }
+
+  &__modules {
+    margin-top: 70px;
+  }
+}
+
+// Modules
+.process-modules {
+  padding: 20px 40px;
+
+  &__title {
+    font-size: 18px;
+    text-align: center;
+    top: -22px;
+    left: 10px;
+    padding: 0 5px;
+  }
+
+  &__item {
+    padding: 20px 0;
+  }
+}
+// End modules
