@@ -1,0 +1,38 @@
+.footer {
+  padding: 16px 0;
+  color: $white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-content {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+  }
+
+  &__logo {
+    width: 120px;
+    height: 112px;
+    flex-basis: 120px;
+  }
+
+  &__content {
+    margin-left: 25px;
+    flex-basis: calc(100% - 145px);
+  }
+
+  &__content {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34px;
+    font-family: $RubikFont;
+  }
+
+  &__copyright {
+    opacity: .6;
+  }
+}

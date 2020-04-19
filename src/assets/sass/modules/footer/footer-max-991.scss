@@ -1,0 +1,15 @@
+.footer {
+  &__container {
+    flex-wrap: wrap;
+  }
+
+  &__logo-content {
+    flex-basis: 100%;
+  }
+
+  &__copyright {
+    text-align: right;
+    margin-top: 15px;
+    flex-basis: 100%;
+  } 
+}
