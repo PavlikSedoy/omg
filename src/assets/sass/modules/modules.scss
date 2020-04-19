@@ -13,6 +13,7 @@
 @import "result/result";
 @import "path/path";
 @import "reviews/reviews";
+@import "gallery/gallery";
 
 // Media
 @media screen and (max-width: 1199px) {
@@ -40,6 +41,7 @@
   @import "free-consultation/free-consultation-max-767";
   @import "process/process-max-767";
   @import "result/result-max-767";
+  @import "galleries/galleries-max-767";
 }
 
 @media screen and (max-width: 575px) {
@@ -54,5 +56,6 @@
   @import "free-consultation/free-consultation-max-575";
   @import "process/process-max-575";
   @import "path/path-max-575";
+  @import "galleries/galleries-max-575";
 }
 // End media

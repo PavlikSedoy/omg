@@ -1,0 +1,33 @@
+section.gallery#gallery
+    .container
+        +sectionTitle('06', 'Галерея')
+
+        .tab-container#galleryTabs
+            .tabs
+                a.tab.active Фото
+                a.tab Видео
+            .tab-panes
+                .tab-pane.active
+                    // Photo gallery
+                    .msg-gallery.msg-gallery--gallery#galleryPhotoGallery
+                        each val in [1, 2, 3, 4, 5, 6, 7, 8]
+                            a.msg-gallery__link.msg-gallery__link--photo2.border-out.border-out--before.msg-gallery__link--gallery(href="/assets/images/photo-gallery/photo-1.jpg")
+                                img.msg-gallery__img.msg-gallery__img--photo.msg-gallery__img--gallery(src="/assets/images/photo-gallery/photo-1.jpg" ,alt="message alt")
+                                .gallery-hover.gallery-hover--photo
+                                    +icon('view-image')
+                    // End photo gallery
+                .tab-pane
+                    // Video gallery
+                    .msg-gallery.msg-gallery--gallery#galleryVideoGallery
+                        each val in [1, 2, 3, 4, 5, 6, 7, 8]
+                            a.msg-gallery__link.msg-gallery__link--video2.border-out.border-out--before.card.card--no-shadow(href="https://www.youtube.com/embed/ea5uxRmRe8Y", data-src="https://www.youtube.com/embed/ea5uxRmRe8Y")
+                                .msg-gallery__img-wr
+                                    img.msg-gallery__img.msg-gallery__img--photo(src="/assets/images/photo-gallery/photo-1.jpg" ,alt="message alt")
+                                    .gallery-hover.gallery-hover--photo
+                                        +icon('play')
+                                    .msg-gallery__video-play
+                                        +icon('play-pre')
+                                .card__content
+                                    h4.card__subtitle 21.03.2020
+                                    h3.card__title Прохорова Дарья
+                    // End video gallery
