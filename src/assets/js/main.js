@@ -33,6 +33,7 @@ import '@images/lightgallery/youtube-play.png';
 import '@images/photo-gallery/photo-1.jpg';
 import '@images/photo-gallery/photo-2.jpg';
 import '@images/photo-gallery/photo-3.jpg';
+import '@images/guarantess/item-1.jpg';
 
 // Scripts
 import '@js/modules/mobile-menu';

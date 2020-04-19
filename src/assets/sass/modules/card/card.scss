@@ -45,6 +45,11 @@
     color: $dark;
   }
 
+  &__list-title {
+    font-weight: 500;
+    font-size: 19px;
+  }
+
   &__info {
     padding-top: 15px;
 
@@ -76,8 +81,49 @@
         margin-top: 0;
       }
     }
+
+    &--pricing {
+      padding-bottom: 40px;
+      padding-right: 25px;
+
+      ul {
+        margin-left: 25px;
+        margin-top: 15px;
+      }
+    }
   }
   // End content
+
+  // Footer
+  &__footer {
+    padding-top: 25px;
+    border-top: 1px solid transparent;
+    text-align: center;
+  }
+
+  &__pricing {
+    font-family: $RubikFont;
+    font-weight: 500;
+    font-size: 42px;
+
+    sup {
+      font-size: 20px;
+      top: -.8em;
+    }
+  }
+
+  &__control {
+    margin-top: 23px;
+
+    button {
+      margin: auto;
+    }
+  }
+
+  // For pricing section
+  &--pricing {
+    padding: 20px;
+  }
 }
 // End card
 

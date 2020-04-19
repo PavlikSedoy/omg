@@ -1,0 +1,37 @@
+- var pricingItems = [{'title': 'Эконом', 'price': 5500}, {'title': 'Стандарт', 'price': 9000}, {'title': 'Профи', 'price': 12000}]
+
+section.pricing#pricing
+    .container
+        +sectionTitle('08', 'Цены и пакеты')
+
+        // Pricing items
+        .pricing__items
+            each val in pricingItems
+                article.card.border-out.border-out--before.card--pricing.pricing__item
+                    .card__heading.line-border
+                        h3.card-title.card-title--pricing= val['title']
+                    .card__info.card__info--pricing
+                        h4.card__list-title В пакет входит:
+                        ul
+                            li То что входит в пакет эконом;
+                            li Еще что-то, что входит в пакет эконом;
+                            li То что входит в пакет эконом;
+                            li Еще что-то, что входит в пакет эконом;
+                            li То что входит в пакет эконом;
+                            li Еще что-то, что входит в пакет эконом;
+                            li То что входит в пакет эконом;
+                            li Еще что-то, что входит в пакет эконом;
+                            li То что входит в пакет эконом;
+                            li Еще что-то, что входит в пакет эконом;
+                            li То что входит в пакет эконом;
+                            li Еще что-то, что входит в пакет эконом;
+                    .card__footer.line-border
+                        .card__pricing.color= val['price']
+                            | <sup>₴</sup>
+                        .card__control
+                            button#pricingButton.button(type="button")
+                                .button__shadow.bg
+                                .button__bottom-bg.button-gradient
+                                .button__bottom-bg.button__bottom-bg--hover.button-hover-gradient
+                                .button__content Заказать звонок
+        // End pricing items

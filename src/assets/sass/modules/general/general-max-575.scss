@@ -39,6 +39,10 @@ p {
 .card-title {
   font-size: 17px;
   line-height: 24px;
+
+  &--pricing {
+    font-size: 22px;
+  }
 }
 
 .form-title {

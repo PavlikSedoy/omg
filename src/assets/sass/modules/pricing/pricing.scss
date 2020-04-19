@@ -1,0 +1,11 @@
+.pricing {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    flex-basis: calc( 100%/3 - 70px );
+  }
+}

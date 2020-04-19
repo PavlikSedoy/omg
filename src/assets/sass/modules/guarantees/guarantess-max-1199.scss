@@ -1,0 +1,16 @@
+// Item
+.guarantees-item {
+  flex-direction: column;
+
+  &__slider {
+    flex-basis: 100%;
+    width: 50%;
+    order: 2;
+  }
+
+  &__content {
+    padding-left: 0;
+    order: 1;
+  }
+}
+// End item

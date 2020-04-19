@@ -1,0 +1,11 @@
+.pricing {
+  &__items {
+    grid-template-columns: 1fr;
+  }
+
+  &__item {
+    &:last-child {
+      grid-column: 1/1;
+    }
+  }
+}

@@ -14,6 +14,8 @@
 @import "path/path";
 @import "reviews/reviews";
 @import "gallery/gallery";
+@import "guarantees/guarantees";
+@import "pricing/pricing";
 
 // Media
 @media screen and (max-width: 1199px) {
@@ -22,6 +24,8 @@
   @import "header/header-max-1199";
   @import "free-consultation/free-consultation-max-1199";
   @import "process/process-max-1199";
+  @import "guarantees/guarantess-max-1199";
+  @import "pricing/pricing-max-1199";
 }
 
 @media screen and (max-width: 991px) {
@@ -34,6 +38,7 @@
   @import "process/process-max-991";
   @import "result/result-max-991";
   @import "path/path-max-991";
+  @import "guarantees/guarantess-max-991";
 }
 
 @media screen and (max-width: 767px) {
@@ -42,6 +47,8 @@
   @import "process/process-max-767";
   @import "result/result-max-767";
   @import "galleries/galleries-max-767";
+  @import "guarantees/guarantees-max-767";
+  @import "pricing/pricing-max-767";
 }
 
 @media screen and (max-width: 575px) {

@@ -1,6 +1,7 @@
 html {
   font-family: $RobotoFont;
   font-size: 16px;
+  color: $dark;
 }
 
 img {
@@ -18,7 +19,8 @@ h1, h2, h3, h4, h5 {
 }
 
 section {
-  padding: 40px 0;
+  position: relative;
+  padding: 80px 0 150px;
 }
 
 main {
@@ -286,6 +288,12 @@ p {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+
+  &--pricing {
+    font-size: 35px;
+    line-height: 52px;
+    text-align: center;
+  }
 }
 
 .form-title {

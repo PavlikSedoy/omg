@@ -93,3 +93,41 @@ document.addEventListener('click', e => {
         videoGallery1.update();
     }
 });
+
+// Guarantess first slider
+var guarantessFirstSlider = new Swiper ('#firstGuarantessSlider', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '#firstGuarantessSlider-next',
+        prevEl: '#firstGuarantessSlider-prev',
+    },
+});
+// End Guarantess first slider
+
+// Guarantess second slider
+var secondGuarantessSlider = new Swiper ('#secondGuarantessSlider', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '#secondGuarantessSlider-next',
+        prevEl: '#secondGuarantessSlider-prev',
+    },
+});
+// End Guarantess second slider

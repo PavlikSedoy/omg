@@ -1,0 +1,15 @@
+.pricing {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  &__item {
+    &:last-child {
+      grid-column: 1/3;
+    }
+  }
+}

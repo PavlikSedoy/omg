@@ -1,0 +1,50 @@
+// General
+.guarantees {
+  background: #FCFBFF;
+
+  &__item {
+    margin-top: 70px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+// End general
+
+// Item
+.guarantees-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__slider {
+    flex-basis: 50%;
+    order: 1;
+  }
+
+  &__content {
+    max-width: 460px;
+  }
+
+  &__arrows {
+    margin-top: 10px;
+  }
+
+  &__content {
+    padding-bottom: 68px;
+    padding-left: 50px;
+    order: 2;
+  }
+
+  &--reverce {
+    .guarantees-item__slider {
+      order: 2;
+    }
+
+    .guarantees-item__content {
+      order: 1;
+    }
+  }
+}
+// End item

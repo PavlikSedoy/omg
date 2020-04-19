@@ -1,0 +1,67 @@
+section.guarantees#guarantees
+    // Container
+    .container
+        +sectionTitle('07', 'Гарантии')
+
+        // Items
+        article.guarantees__item.guarantees-item
+            // Slider
+            .guarantees-item__slider.swiper-container#firstGuarantessSlider
+                // Slides wrapper
+                .swiper-wrapper
+                    .swiper-slide.guarantees-item__slide
+                        img.guarantees-item__slide-img(src="/assets/images/guarantess/item-1.jpg", alt="Sertificate image")
+                    .swiper-slide.guarantees-item__slide
+                        img.guarantees-item__slide-img(src="/assets/images/guarantess/item-1.jpg", alt="Sertificate image")
+                    .swiper-slide.guarantees-item__slide
+                        img.guarantees-item__slide-img(src="/assets/images/guarantess/item-1.jpg", alt="Sertificate image")
+                    .swiper-slide.guarantees-item__slide
+                        img.guarantees-item__slide-img(src="/assets/images/guarantess/item-1.jpg", alt="Sertificate image")
+                // End slider wrapper
+
+                // Controls
+                .guarantees-item__arrows.swiper-buttons
+                    .swiper-button-prev.guarantees-item__arrow--prev.hover-bg#firstGuarantessSlider-prev
+                        include ../../assets/images/svg/arrow-left.svg
+                    .swiper-button-next.guarantees-item__arrow--next.hover-bg#firstGuarantessSlider-next
+                        include ../../assets/images/svg/arrow-right.svg
+            // End slider
+
+            // Content
+            .guarantees-item__content
+                h3.card-title Мы гордимся нашими преподавателями, они – наша главная ценность!
+                p Мы считаем, что основой успешной работы любого учебного центра является именно преподавательский коллектив, поэтому к качеству преподавания у нас особое отношение. В чем же выражается наше стремление к высокому качеству преподавания?
+                p Наши преподаватели регулярно проходят аудит и постоянно повышают свой профессиональный уровень, как на рабочем месте, так и самостоятельно.
+            // End content
+
+        article.guarantees__item.guarantees-item.guarantees-item--reverce
+            // Slider
+            .guarantees-item__slider.swiper-container#secondGuarantessSlider
+                // Slides wrapper
+                .swiper-wrapper
+                    .swiper-slide.guarantees-item__slide
+                        img.guarantees-item__slide-img(src="/assets/images/guarantess/item-1.jpg", alt="Sertificate image")
+                    .swiper-slide.guarantees-item__slide
+                        img.guarantees-item__slide-img(src="/assets/images/guarantess/item-1.jpg", alt="Sertificate image")
+                    .swiper-slide.guarantees-item__slide
+                        img.guarantees-item__slide-img(src="/assets/images/guarantess/item-1.jpg", alt="Sertificate image")
+                    .swiper-slide.guarantees-item__slide
+                        img.guarantees-item__slide-img(src="/assets/images/guarantess/item-1.jpg", alt="Sertificate image")
+                // End slider wrapper
+
+                // Controls
+                .guarantees-item__arrows.swiper-buttons
+                    .swiper-button-prev.guarantees-item__arrow--prev.hover-bg#secondGuarantessSlider-prev
+                        include ../../assets/images/svg/arrow-left.svg
+                    .swiper-button-next.guarantees-item__arrow--next.hover-bg#secondGuarantessSlider-next
+                        include ../../assets/images/svg/arrow-right.svg
+            // End slider
+
+            // Content
+            .guarantees-item__content
+                h3.card-title После окончания курса вы получите Диплом, подтверждающий что вы стали специалистом в области косметологии и дополнение к диплому
+                p Мы считаем, что основой успешной работы любого учебного центра является именно преподавательский коллектив, поэтому к качеству преподавания у нас особое отношение. В чем же выражается наше стремление к высокому качеству преподавания?
+                p Наши преподаватели регулярно проходят аудит и постоянно повышают свой профессиональный уровень, как на рабочем месте, так и самостоятельно.
+            // End content
+        // End item
+    // End container
