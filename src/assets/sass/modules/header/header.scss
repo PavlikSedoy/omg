@@ -45,6 +45,31 @@
     padding-bottom: 25px;
   }
 
+  &__set-until {
+    padding: 8px 25px;
+    border-radius: 0 20px;
+    color: $white;
+    justify-self: flex-start;
+    font-weight: 500;
+    font-family: $RubikFont;
+    display: inline-block;
+
+    span {
+      &:first-child {
+        font-size: 16px;
+      }
+
+      &:last-child {
+        font-size: 20px;
+        margin-left: 2px;
+      }
+    }
+  }
+
+  &__up-title {
+    margin-top: 25px;
+  }
+
   &__title {
     margin-top: 14px;
   }
@@ -52,7 +77,7 @@
   &__subtitle {
     margin-top: 30px;
     width: 465px;
-  }
+    margin-top: 25px  }
 
   &__form {
     grid-area: head-form;
