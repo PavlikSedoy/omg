@@ -29,7 +29,7 @@ section.pricing#pricing
                         .card__pricing.color= val['price']
                             | <sup>₴</sup>
                         .card__control
-                            button#pricingButton.button(type="button")
+                            button.button(type="button", onClick="openModal()")
                                 .button__shadow.bg
                                 .button__bottom-bg.button-gradient
                                 .button__bottom-bg.button__bottom-bg--hover.button-hover-gradient

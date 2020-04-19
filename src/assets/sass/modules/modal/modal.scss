@@ -1,0 +1,73 @@
+// Overlay bg
+.modal-wr {
+  @include cubic-first;
+  position: fixed;
+  z-index: z('modals');
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($black, .8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+// End overlay bg
+
+// Modal
+.modal {
+  padding: 100px 90px;
+  background: $white;
+  border-radius: 0 80px;
+  position: relative;
+
+  &__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 52px;
+  }
+
+  &__form {
+    width: 375px;
+    margin-top: 25px;
+  }
+
+  &__close {
+    @include cubic-first;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+    svg {
+      path {
+        @include cubic-first;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}
+// End modal

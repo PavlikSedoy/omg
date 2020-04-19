@@ -41,3 +41,4 @@ import '@js/modules/scroll-to-id';
 import '@js/modules/tabs';
 import '@js/modules/galleries';
 import '@js/modules/sliders';
+import '@js/modules/pricing';

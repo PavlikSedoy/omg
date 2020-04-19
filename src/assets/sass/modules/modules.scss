@@ -17,6 +17,7 @@
 @import "guarantees/guarantees";
 @import "pricing/pricing";
 @import "footer/footer";
+@import "modal/modal";
 
 // Media
 @media screen and (max-width: 1199px) {
@@ -51,6 +52,7 @@
   @import "galleries/galleries-max-767";
   @import "guarantees/guarantees-max-767";
   @import "pricing/pricing-max-767";
+  @import "modal/modal-max-767";
 }
 
 @media screen and (max-width: 575px) {
