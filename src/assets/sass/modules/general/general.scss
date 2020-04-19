@@ -52,6 +52,28 @@ p {
       }
     }
 
+    .hover-bg {
+      &:hover {
+        background: $purple;
+      }
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      svg {
+        path {
+          fill: $purple;
+        }
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+
     .input-border {
       @include cubic-first;
       border: 1px solid rgba($purple, .25);
@@ -174,9 +196,34 @@ p {
         background: $purple;
       }
     }
+
+    .path, .reviews {
+      background: rgba($purple, .03);
+    }
+
+    .tab.active {
+      background: rgba($purple, .3);
+    }
+
+    .gallery-hover {
+      background: rgba($purple, .7);
+    }
   }
 }
 // End theme colors
+
+.bottom-wave {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  bottom: 0;
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
 
 // Titles
 .head-title {

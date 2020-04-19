@@ -3,12 +3,16 @@
 @import "card/card";
 @import "scroll/scroll";
 @import "circle-item/circle-item";
+@import "tabs/tabs";
+@import "galleries/galleries";
+@import "sliders/sliders";
 @import "for-who/for-who";
 @import "about/about";
 @import "free-consultation/free-consultation";
 @import "process/process";
 @import "result/result";
 @import "path/path";
+@import "reviews/reviews";
 
 // Media
 @media screen and (max-width: 1199px) {
@@ -40,6 +44,8 @@
 
 @media screen and (max-width: 575px) {
   @import "general/general-max-575";
+  @import "sliders/sliders-max-575";
+  @import "tabs/tabs-max-575";
   @import "container/container-max-575";
   @import "header/header-max-575";
   @import "card/card-max-575";

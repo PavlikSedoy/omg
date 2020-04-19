@@ -27,7 +27,16 @@ import '@images/process/item-3.jpg';
 import '@images/process/section-bg.png';
 import '@images/result/section-bg.png';
 import '@images/result/icon-7.svg';
+import '@images/reviews/messages/item-1.jpg';
+import '@images/lightgallery/loading.gif';
+import '@images/lightgallery/youtube-play.png';
+import '@images/photo-gallery/photo-1.jpg';
+import '@images/photo-gallery/photo-2.jpg';
+import '@images/photo-gallery/photo-3.jpg';
 
 // Scripts
 import '@js/modules/mobile-menu';
 import '@js/modules/scroll-to-id';
+import '@js/modules/tabs';
+import '@js/modules/galleries';
+import '@js/modules/sliders';

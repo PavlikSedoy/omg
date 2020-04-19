@@ -1,0 +1,40 @@
+// Tabs
+.tabs {
+  display: flex;
+  justify-content: center;
+
+  .tab {
+    @include cubic-first;
+    font-family: $RubikFont;
+    font-weight: 500;
+    font-size: 19px;
+    color: rgba($dark, .5);
+    padding: 20px 40px;
+    display: block;
+    border-radius: 0 30px;
+
+    &:hover {
+      cursor: pointer;
+      color: $dark;
+    }
+
+    &.active {
+      color: $dark;
+    }
+  }
+}
+// End tabs
+
+// Content
+.tab-panes {
+  padding-top: 80px;
+
+  .tab-pane{
+    display: none;
+
+    &.active{
+      display: block
+    }
+  }
+}
+// End content

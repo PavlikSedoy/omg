@@ -1,0 +1,19 @@
+.swiper {
+  &-buttons {
+    justify-content: center;
+  }
+
+  &-button {
+    &-prev, &-next {
+      padding: 20px;
+    }
+
+    &-prev {
+      margin-right: 5px;
+    }
+
+    &-next {
+      margin-left: 5px;
+    }
+  }
+}

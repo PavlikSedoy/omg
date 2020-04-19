@@ -1,0 +1,53 @@
+@import "~swiper/swiper";
+
+.swiper {
+  &-container {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-button {
+    &-prev, &-next {
+      @include cubic-first;
+      background: $white;
+      padding: 25px 30px;
+      box-shadow: 0px 4px 30px rgba($black, 0.05);
+      outline: none;
+
+      svg {
+        path {
+          @include cubic-first;
+        }
+      }
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-prev {
+      border-radius: 30px 0 30px 30px;
+      margin-right: 15px;
+    }
+
+    &-next {
+      border-radius: 0 30px 30px 30px;
+    }
+
+    &-disabled {
+      background: rgba($gray, .1) !important;
+
+      svg {
+        path {
+          fill: $gray !important;
+        }
+      }
+    }
+  }
+}
