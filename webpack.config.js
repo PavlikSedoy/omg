@@ -22,8 +22,8 @@ const optimization = () => {
 
   if (isProd) {
     config.minimizer = [
-      // new OptimizeCssAssetPlugin(),
-      // new TerserWebpackPlugin()
+      new OptimizeCssAssetPlugin(),
+      new TerserWebpackPlugin()
     ]
   }
 

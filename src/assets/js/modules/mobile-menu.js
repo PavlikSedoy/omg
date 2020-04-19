@@ -19,6 +19,17 @@ hamburgerCheck.addEventListener('change', () => {
     // Change mobile nav state
     mobileMenuState = !mobileMenuState;
 });
+
+// Close mobile nav when menu item clicked
+document.addEventListener('click', (e) => {
+    if (e.target.closest('.navigation__link')) {
+        mobileMenu.classList.remove('mobile-menu--active');
+        enablePageScroll();
+
+        mobileMenuState = !mobileMenuState;
+    }
+});
+
 // End mobile menu open/close
 
 // Fixed/unfixed navbar
