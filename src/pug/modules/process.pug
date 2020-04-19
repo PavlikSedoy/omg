@@ -2,7 +2,27 @@
 
 - var processModules = [{'title': 'Модуль 1. Организация работы косметологического кабинета', 'list': ['Требования для открытия косметологического кабинета;', 'Оформление кабинета;', 'Правила санитарно-эпидемиологического режима;', 'Внешний облик косметолога;', 'Внешний облик косметолога;', 'Оснащение кабинета (обязательный минимум).']}, {'title': 'Модуль 2. Строение и функции кожи', 'list': ['Эпидермис;', 'Дерма;', 'Гиподерма;', 'Придатки кожи;', 'Внешний облик косметолога;', 'иннервация; кровеносная и лимфатическая системы кожи.']}, {'title': 'Модуль 3. Типы кожи и диагностика', 'list': ['Сухая;', 'Жирная;', 'Комбинированная.']}, {'title': 'Модуль 4. Старение кожи', 'list': ['Естественные старения (хроно — старение);', 'Фото-старение;', 'методы профилактики.']}, {'title': 'Модуль 5. Чистки', 'list': ['Механическая (гигиеничная, ручная);', 'УЗЧ;', 'Атравматическая.']}, {'title': 'Модуль 6. Массаж лица (на выбор)', 'list': ['Классический;', 'Испанский-лимфодренажный;', 'пластический.']}, {'title': 'Модуль 7. Химические пилинги', 'list': ['Поверхностный;', 'Средний;', 'Глубокий.']}, {'title': 'Модуль 8. Аппаратная косметология', 'list': ['Микротоки', 'Микронидлинг (дермо штамп).']},]
 
-section.process#process
+section.process.color-bg#process
+
+    // Angles
+    .angles.angles--bottom-right
+        include ../../assets/images/svg/dots-bottom-right.svg
+    // End angles
+
+    // Flowers bg
+    .flower-bg.process__flower-1
+        include ../../assets/images/process/flower-1.svg
+    .flower-bg.process__flower-2
+        include ../../assets/images/process/flower-2.svg
+    .flower-bg.process__flower-3
+        include ../../assets/images/process/flower-3.svg
+    .flower-bg.process__flower-4
+        include ../../assets/images/process/flower-4.svg
+    // End flowers bg
+
+    .bottom-wave
+        include ../../assets/images/svg/bottom-white-wave.svg
+
     .container
         +sectionTitle('03', 'Как проходит обучение')
 

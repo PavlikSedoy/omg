@@ -2,6 +2,17 @@
   padding-top: 60px;
   padding-bottom: 80px;
 
+  &__flower {
+    &-1 {
+      width: 100px;
+    }
+
+    &-2 {
+      top: 45%;
+      width: 80px;
+    }
+  }
+
   &__content {
     margin-top: 0;
   }

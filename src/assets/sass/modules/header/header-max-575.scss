@@ -1,5 +1,37 @@
 // Header
 .header {
+
+  // Flowers
+  &__flower {
+    &-1 {
+      width: 70px;
+      left: 8px;
+      top: 96px;
+    }
+
+    &-2 {
+      width: 70px;
+    }
+
+    &-3 {
+      top: 25%;
+      width: 80px;
+    }
+
+    &-4 {
+      width: 110px;
+    }
+
+    &-5 {
+      display: none;
+    }
+
+    &-6 {
+      bottom: 97px;
+      width: 90px;
+    }
+  }
+
   &__logo {
     height: 40px;
   }

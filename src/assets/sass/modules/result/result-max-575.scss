@@ -1,0 +1,18 @@
+.result {
+  // Flowers
+  &__flower {
+    &-1 {
+      top: 110px;
+      left: 0;
+      width: 110px;
+    }
+
+    &-2 {
+      display: none;
+    }
+
+    &-3 {
+      display: none;
+    }
+  }
+}

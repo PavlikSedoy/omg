@@ -11,4 +11,10 @@
     margin: auto;
     margin-top: 25px;
   }
+
+  &__bg {
+    &:after {
+      display: none;
+    }
+  }
 }

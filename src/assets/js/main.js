@@ -34,6 +34,14 @@ import '@images/photo-gallery/photo-1.jpg';
 import '@images/photo-gallery/photo-2.jpg';
 import '@images/photo-gallery/photo-3.jpg';
 import '@images/guarantess/item-1.jpg';
+import '@images/free-consultation/dots.svg'
+import '@images/free-consultation/lady.png';
+import '@images/result/icon-1.svg';
+import '@images/result/icon-2.svg';
+import '@images/result/icon-3.svg';
+import '@images/result/icon-4.svg';
+import '@images/result/icon-5.svg';
+import '@images/result/icon-6.svg';
 
 // Scripts
 import '@js/modules/mobile-menu';

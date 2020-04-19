@@ -1,4 +1,16 @@
 .pricing {
+  // Flowers
+  &__flower {
+    &-1 {
+      left: 10px;
+      width: 70px;
+    }
+
+    &-2 {
+      display: none;
+    }
+  }
+
   &__items {
     grid-template-columns: 1fr;
   }

@@ -2,6 +2,20 @@
   padding-top: 80px;
   padding-bottom: 130px;
 
+  &__flower {
+    &-1 {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &-2 {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
   &__container {
     z-index: z('content');
   }

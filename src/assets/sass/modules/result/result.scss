@@ -1,6 +1,25 @@
 .result {
   padding-bottom: 200px;
 
+  // Flowers
+  &__flower {
+    &-1 {
+      top: 0;
+      left: 81px;
+    }
+
+    &-2 {
+      right: -55px;
+      bottom: 10%;
+      transform: translateY(-50%);
+    }
+
+    &-3 {
+      bottom: 20px;
+      right: 30%;
+    }
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 280px);

@@ -2,6 +2,48 @@
 .theme {
   // for purple
   &--purple {
+    // Angles dots
+    .angles {
+      path {
+        fill: $purple;
+      }
+    }
+    // And angles dots
+
+    // Flowers bg
+    .flower-bg {
+      path {
+        fill: $purple;
+      }
+    }
+    // End flowers bg
+
+    // Waves
+    .middle-wave {
+      svg {
+        path {
+          fill: #FCFBFF;
+        }
+      }
+    }
+    // End waves
+
+    // Free consultation
+    .free-consultation:before {
+      background: #FCFBFF;
+    }
+
+    .free-consultation__bg {
+      path {
+        fill: $purple;
+        opacity: .1;
+      }
+    }
+    
+    .color-bg {
+      background: #FCFBFF;
+    }
+
     .before-bg {
       &:before {
         background: $purple;
@@ -107,24 +149,12 @@
       background: 100% 100%/contain no-repeat url("/assets/images/for-who/item-dots.png");
     }
 
-    .for-who {
-      background: 0% 0%/100% no-repeat url("/assets/images/for-who/bg.jpg");
-    }
-
     .about-item__icon-wr, .result-item__icon-wr {
       background: 50% 50%/100% no-repeat url("/assets/images/about/item-bg.svg");
     }
 
     .about-item__bg--dots {
       background: 100% 100%/100% no-repeat url("/assets/images/about/dots-bg.svg");
-    }
-
-    .about {
-      background: 0% 0%/100% no-repeat url("/assets/images/about/section-bg.png");
-    }
-
-    .free-consultation__bg {
-      background: 50% 50%/cover no-repeat url("/assets/images/free-consultation/bg.png");
     }
 
     .process-modules__title {
@@ -137,14 +167,6 @@
 
     .process-modules__item {
       border-color: rgba($purple, .3);;
-    }
-
-    .process {
-      background: 0% 0%/cover no-repeat url("/assets/images/process/section-bg.png");
-    }
-
-    .result {
-      background: 0% 0%/cover no-repeat url("/assets/images/result/section-bg.png");
     }
 
     .circle-item {

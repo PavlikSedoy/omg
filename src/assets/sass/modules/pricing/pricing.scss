@@ -1,4 +1,17 @@
 .pricing {
+  // Flowers
+  &__flower {
+    &-1 {
+      top: 40px;
+      left: 140px;
+    }
+
+    &-2 {
+      bottom: 20%;
+      right: 0;
+    }
+  }
+
   &__items {
     display: flex;
     justify-content: space-between;

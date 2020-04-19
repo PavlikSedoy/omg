@@ -1,0 +1,16 @@
+.reviews {
+  // Flowers
+  &__flower {
+    &-1 {
+      left: 10px;
+      top: 40px;
+      width: 110px;
+    }
+
+    &-2 {
+      top: 120px;
+      right: -17px;
+      width: 90px;
+    }
+  }
+}

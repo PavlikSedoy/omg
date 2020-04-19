@@ -1,6 +1,17 @@
 .path
     // Heading container
     .path__heading.bg
+        // Angles
+        .angles.angles--bottom-right.path__angles
+            include ../../assets/images/svg/dots-bottom-right.svg
+        // End angles
+
+        // Flowers
+        .flower-bg.path__flower-1
+            include ../../assets/images/path/flower-1.svg
+        .flower-bg.path__flower-2
+            include ../../assets/images/path/flower-2.svg
+
         // Top wave
         .path__top-wave
             include ../../assets/images/path/top-wave.svg
@@ -23,6 +34,9 @@
     .path__form
         .container.path__form-container
             .free-consultation__in.border-out
+                .free-consultation__bg
+                    include ../../assets/images/free-consultation/dots.svg
+
                 .free-consultation__bg
                 .free-consultation__content
                     h2.form-title.color Записаться на курс уже сегодня

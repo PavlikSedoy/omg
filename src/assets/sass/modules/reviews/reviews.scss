@@ -2,4 +2,17 @@
   position: relative;
   padding-top: 80px;
   padding-bottom: 150px;
+
+  // Flowers
+  &__flower {
+    &-1 {
+      left: 20%;
+      top: 40px;
+    }
+
+    &-2 {
+      top: 120px;
+      right: -37px;
+    }
+  }
 }

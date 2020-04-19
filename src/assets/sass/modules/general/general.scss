@@ -40,12 +40,14 @@ p {
 
 @import "../../utils/theme-colors";
 
+// Waves
 .bottom-wave {
   position: absolute;
   left: 0;
   display: flex;
   align-items: flex-end;
   bottom: 0;
+  width: 100%;
 
   svg {
     height: 100%;
@@ -53,10 +55,69 @@ p {
   }
 }
 
+.middle-wave {
+  position: absolute;
+  left: 0;
+  bottom: calc(45% - 4px);
+  width: 100%;
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+// End waves
+
 // Bg
 .white-bg {
   background: $white;
 }
+
+// Dottes bg in angles
+.angles {
+  position: absolute;
+
+  &--top-left {
+    top: 0;
+    left: 0;
+  }
+
+  &--top-right {
+    top: 0;
+    right: 0;
+  }
+
+  &--bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+
+  &--bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+// End angles
+.flower-bg {
+  position: absolute;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  path {
+    fill: $purple;
+  }
+}
+// Flower bg
+
+// End flower bg
 
 // Titles
 .head-title {

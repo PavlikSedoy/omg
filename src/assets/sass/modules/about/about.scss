@@ -1,5 +1,30 @@
 // Section styles
 .about {
+
+  // Flowers
+  &__flower {
+    &-1 {
+      bottom: 230px;
+      left: 0;
+    }
+
+    &-2 {
+      top: -150px;
+      right: 0;
+    }
+
+    &-3 {
+      top: 214px;
+      right: 20%;
+    }
+
+    &-4 {
+      bottom: -110px;
+      right: -230px;
+    }
+  }
+  // End flowers
+
   &__items {
     display: grid;
     grid-template-columns: 1fr;

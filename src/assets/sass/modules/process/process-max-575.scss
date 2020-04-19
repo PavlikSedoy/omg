@@ -1,4 +1,12 @@
 .process {
+
+  // Flowers
+  &__flower {
+    &-4 {
+      width: 80px;
+    }
+  }
+
   &__image {
     flex-basis: 100%;
     margin-top: 0;

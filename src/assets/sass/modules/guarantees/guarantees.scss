@@ -2,6 +2,19 @@
 .guarantees {
   background: #FCFBFF;
 
+  // Flowers
+  &__flower {
+    &-1 {
+      top: 40px;
+      right: 0;
+    }
+
+    &-2 {
+      top: 50%;
+      left: 50%;
+    }
+  }
+
   &__item {
     margin-top: 70px;
 

@@ -1,4 +1,41 @@
 .process {
+
+  // Flowers
+  &__flower {
+    &-1 {
+      top: 320px;
+      left: 0;
+    }
+
+    &-2 {
+      top: 700px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &-3 {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &-4 {
+      left: 0;
+      bottom: 20%;
+    }
+
+    &-5 {
+      right: 31px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &-6 {
+      bottom: 7px;
+      right: 0px;
+    }
+  }
+
   // General content
   &__general-content {
     display: flex;

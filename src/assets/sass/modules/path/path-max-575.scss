@@ -1,4 +1,17 @@
 .path {
+
+  &__flower {
+    &-1 {
+      width: 80px;
+    }
+
+    &-2 {
+      top: 130px;
+      right: 20px;
+      width: 110px;
+    }
+  }
+
   &__heading {
     padding: 60px 0 300px;
   }

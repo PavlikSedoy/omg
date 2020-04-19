@@ -1,6 +1,28 @@
 .path {
   position: relative;
   padding-bottom: 220px;
+
+  // Flowers
+  &__flower-1, &__flower-2 {
+    svg {
+      path {
+        fill: $white !important;
+      }
+    }
+  }
+
+  &__flower {
+    &-1 {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    &-2 {
+      top: 80px;
+      right: 130px;
+    }
+  }
   
   // Heading part
   &__heading-container {
@@ -10,6 +32,15 @@
   &__heading {
     position: relative;
     padding: 100px 0 330px;
+    position: relative;
+  }
+  
+  &__angles {
+    svg {
+      path {
+        fill: $white !important;
+      }
+    }
   }
 
   &__subtitle {
@@ -47,6 +78,7 @@
 
   &__top-wave {
     bottom: calc(100% - 1px);
+    width: 100%;
   }
 
   &__bottom-wave {
@@ -71,6 +103,14 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    &-container {
+      .border-out {
+        &:before, &:after {
+          border-radius: 0 80px;
+        }
+      }
+    }
   }
   // End form
 }
