@@ -1,0 +1,175 @@
+// Theme colors
+.theme {
+  // for purple
+  &--purple {
+    .before-bg {
+      &:before {
+        background: $purple;
+      }
+    }
+
+    .hover-color {
+      &:hover, &:active, &:focus {
+        color: $purple;
+      }
+    }
+
+    .hover-bg {
+      &:hover {
+        background: $purple;
+      }
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      svg {
+        path {
+          fill: $purple;
+        }
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+
+    .input-border {
+      @include cubic-first;
+      border: 1px solid rgba($purple, .25);
+
+      &:hover, &:focus, &:active {
+        border-color: $purple;
+      }
+    }
+
+    .button-gradient {
+      background: linear-gradient(180deg, #5B4696 0%, #9582CC 100%);
+    }
+
+    .bg {
+      background: $purple;
+    }
+
+    .button-hover-gradient {
+      background: linear-gradient(180deg, #3C2E65 0%, #635194 100%);
+    }
+
+    .line-border {
+      border-color: rgba($purple, .3);
+    }
+
+    .border-out {
+      &:before, &:after {
+        border-color: rgba($purple, .3);
+      }
+
+      &--before {
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    .card__info {
+      li:before {
+        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot.svg');
+      }
+    }
+
+    .process-modules__item {
+      li:before {
+        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot.svg');
+      }
+    }
+
+    .header {
+      background: 50% 50%/cover no-repeat url("/assets/images/header/bg.svg");
+    }
+
+    .section-title__count-image {
+      background: 50% 50%/contain no-repeat url('/assets/images/section-title-image.png');
+    }
+
+    .color {
+      color: $purple;
+    }
+
+    .section-title__count-val {
+      background: linear-gradient(180deg, rgba(91, 70, 150, 0.2) 0%, rgba(91, 70, 150, 0) 94.27%, rgba(91, 70, 150, 0) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .for-who__item-number {
+      background: 50% 50%/contain no-repeat url("/assets/images/for-who/list.jpg");
+    }
+
+    .for-who__item-image-bg {
+      background: 100% 100%/contain no-repeat url("/assets/images/for-who/item-dots.png");
+    }
+
+    .for-who {
+      background: 0% 0%/100% no-repeat url("/assets/images/for-who/bg.jpg");
+    }
+
+    .about-item__icon-wr, .result-item__icon-wr {
+      background: 50% 50%/100% no-repeat url("/assets/images/about/item-bg.svg");
+    }
+
+    .about-item__bg--dots {
+      background: 100% 100%/100% no-repeat url("/assets/images/about/dots-bg.svg");
+    }
+
+    .about {
+      background: 0% 0%/100% no-repeat url("/assets/images/about/section-bg.png");
+    }
+
+    .free-consultation__bg {
+      background: 50% 50%/cover no-repeat url("/assets/images/free-consultation/bg.png");
+    }
+
+    .process-modules__title {
+      background: #FCFBFF;
+    }
+
+    .process__modules {
+      border-color: rgba($purple, .3);
+    }
+
+    .process-modules__item {
+      border-color: rgba($purple, .3);;
+    }
+
+    .process {
+      background: 0% 0%/cover no-repeat url("/assets/images/process/section-bg.png");
+    }
+
+    .result {
+      background: 0% 0%/cover no-repeat url("/assets/images/result/section-bg.png");
+    }
+
+    .circle-item {
+      background: $purple;
+
+      &:before, &:after {
+        background: $purple;
+      }
+    }
+
+    .path, .reviews {
+      background: rgba($purple, .03);
+    }
+
+    .tab.active {
+      background: rgba($purple, .3);
+    }
+
+    .gallery-hover {
+      background: rgba($purple, .7);
+    }
+  }
+}
+// End theme colors
