@@ -29,7 +29,7 @@ section.reviews#reviews
                         .swiper-wrapper
                             each val in [1, 2, 3, 4, 5, 6, 7, 8]
                                 a.msg-gallery__link.swiper-slide(href="/assets/images/reviews/messages/item-1.jpg")
-                                    img.msg-gallery__img(src="/assets/images/reviews/messages/item-1.jpg" ,alt="message alt")
+                                    img.msg-gallery__img.lazy(data-src="/assets/images/reviews/messages/item-1.jpg" ,alt="message alt")
                                     .gallery-hover
                                         +icon('view-image')
                     .swiper-buttons
@@ -44,7 +44,7 @@ section.reviews#reviews
                         .swiper-wrapper
                             each val in [1, 2, 3, 4, 5, 6, 7, 8]
                                 a.msg-gallery__link.swiper-slide.msg-gallery__link--photo1.border-out.border-out--before(href="/assets/images/photo-gallery/photo-1.jpg")
-                                    img.msg-gallery__img.msg-gallery__img--photo(src="/assets/images/photo-gallery/photo-1.jpg" ,alt="message alt")
+                                    img.msg-gallery__img.msg-gallery__img--photo.lazy(data-src="/assets/images/photo-gallery/photo-1.jpg" ,alt="message alt")
                                     .gallery-hover.gallery-hover--photo
                                         +icon('view-image')
                     .swiper-buttons
@@ -60,7 +60,7 @@ section.reviews#reviews
                             each val in [1, 2, 3, 4, 5, 6, 7, 8]
                                 a.msg-gallery__link.swiper-slide.msg-gallery__link--video1.border-out.border-out--before.card.card--no-shadow(href="https://www.youtube.com/embed/ea5uxRmRe8Y", data-src="https://www.youtube.com/embed/ea5uxRmRe8Y")
                                     .msg-gallery__img-wr
-                                        img.msg-gallery__img.msg-gallery__img--photo(src="/assets/images/photo-gallery/photo-1.jpg" ,alt="message alt")
+                                        img.msg-gallery__img.msg-gallery__img--photo.lazy(data-src="/assets/images/photo-gallery/photo-1.jpg" ,alt="message alt")
                                         .gallery-hover.gallery-hover--photo
                                             +icon('play')
                                         .msg-gallery__video-play

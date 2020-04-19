@@ -1,3 +1,5 @@
+import {disablePageScroll, enablePageScroll} from "scroll-lock";
+
 const modal = document.getElementById('modal');
 const closeModalBtn = document.getElementById('closeModal');
 
@@ -11,10 +13,12 @@ document.addEventListener('click', e => {
 
 const openModal = () => {
     modal.classList.add('modal-wr--active');
+    disablePageScroll();
 }
 
 const closeModal = () => {
-    modal.classList.remove('modal-wr--active')
+    modal.classList.remove('modal-wr--active');
+    enablePageScroll();
 }
 
 const checkModalClasses = () => {

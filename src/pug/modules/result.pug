@@ -18,6 +18,6 @@ section.result#result
             each val in resultItems
                 article.result__item.border-out.border-out--top-left-radius.border-out--before.result-item
                     .result-item__in
-                        .result-item__icon-wr
-                            img.result-item__img(src=`/assets/images/result/icon-${val['img']}.svg`, alt="Icon alt")
+                        .result-item__icon-wr.circle-item
+                            img.result-item__img.lazy(data-src=`/assets/images/result/icon-${val['img']}.svg`, alt="Icon alt")
                         p.result-item__text= val['text']

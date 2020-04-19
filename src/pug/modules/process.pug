@@ -37,7 +37,7 @@ section.process.color-bg#process
 
             // Image side
             .process__image.border-out.figure-image
-                img.figure-image__img(src="/assets/images/process/Photo.jpg", alt="Alt photo")
+                img.figure-image__img.lazy(data-src="/assets/images/process/Photo.jpg", alt="Alt photo")
             // End image side
         // End text and image
 
@@ -47,7 +47,7 @@ section.process.color-bg#process
                 .border-out.border-out--before.card
                     // Image
                     .card__image.figure-image
-                        img.figure-image__img(src=`/assets/images/process/item-${val['img']}.jpg`, alt="Alt photo")
+                        img.figure-image__img.lazy(data-src=`/assets/images/process/item-${val['img']}.jpg`, alt="Alt photo")
                     // End image
 
                     // Content

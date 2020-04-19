@@ -50,3 +50,4 @@ import '@js/modules/tabs';
 import '@js/modules/galleries';
 import '@js/modules/sliders';
 import '@js/modules/pricing';
+import '@js/modules/lazy-load';
