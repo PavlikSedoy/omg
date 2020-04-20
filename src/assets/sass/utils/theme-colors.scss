@@ -128,7 +128,15 @@
     }
 
     .section-title__count-image {
-      background: 50% 50%/contain no-repeat url('/assets/images/svg/title-dotes.svg');
+      svg stop {
+        stop-color: $purple;
+      }
+    }
+
+    .for-who__item-image-bg, .about-item__bg--dots {
+      svg circle {
+        fill: $purple;
+      }
     }
 
     .color {
@@ -139,18 +147,6 @@
       background: linear-gradient(180deg, rgba(91, 70, 150, 0.2) 0%, rgba(91, 70, 150, 0) 94.27%, rgba(91, 70, 150, 0) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-    }
-
-    .for-who__item-number {
-      background: 50% 50%/contain no-repeat url("/assets/images/svg/big-dot.svg");
-    }
-
-    .for-who__item-image-bg {
-      background: 100% 100%/contain no-repeat url("/assets/images/for-who/item-dots.png");
-    }
-
-    .about-item__bg--dots {
-      background: 100% 100%/100% no-repeat url("/assets/images/svg/dots-bg.svg");
     }
 
     .process-modules__title {
@@ -193,3 +189,4 @@
 // End theme colors
 
 @import "../modules/theme-colors/admin";
+@import "../modules/theme-colors/eyebrow";

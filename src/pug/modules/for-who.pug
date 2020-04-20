@@ -37,8 +37,9 @@ section.for-who.color-bg#forWho
                         li.for-who__item
                             .for-who__item-content
                                 .for-who__item-image-bg
+                                    include ../../assets/images/svg/for-who-dots.svg
                                 .for-who__item-bg
                                 p= val['text']
-                            .for-who__item-number= val['number']
+                            .for-who__item-number.circle-item.circle-item--for-who= val['number']
             // End list side
     // End container

@@ -84,6 +84,11 @@ const plugins = () => {
       filename: 'admin.html',
       inject: true
     }),
+    new HtmlWebpackPlugin({
+      template: './pug/eyebrow.pug',
+      filename: 'eyebrow.html',
+      inject: true
+    }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {

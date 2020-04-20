@@ -1,8 +1,8 @@
-$thCl: #DD366F;
+$thCl: #7A1B38;
 
 .theme {
-  // For admin
-  &--admin {
+  // For eyebrow
+  &--eyebrow {
     // Angles dots
     .angles {
       path {
@@ -19,20 +19,8 @@ $thCl: #DD366F;
     }
     // End flowers bg
 
-    // Waves
-    .middle-wave {
-      svg {
-        path {
-          fill: #fef9fb;
-        }
-      }
-    }
-    // End waves
 
     // Free consultation
-    .free-consultation:before {
-      background: #fef9fb;
-    }
 
     .free-consultation__bg {
       path {
@@ -42,7 +30,25 @@ $thCl: #DD366F;
     }
 
     .color-bg {
-      background: #fef9fb;
+      background: #FAF6F7;
+    }
+
+    // Waves
+    .middle-wave {
+      svg {
+        path {
+          fill: #FAF6F7;
+        }
+      }
+    }
+    // End waves
+
+    .free-consultation:before {
+      background: #FAF6F7;
+    }
+
+    .path__top-wave path{
+      fill: $thCl;
     }
 
     .before-bg {
@@ -89,7 +95,7 @@ $thCl: #DD366F;
     }
 
     .button-gradient {
-      background: linear-gradient(180deg, #DD366F 0%, #EF5D8F 100%);
+      background: linear-gradient(180deg, #7A1B38 0%, #BB4C6E 100%);
     }
 
     .bg {
@@ -97,7 +103,7 @@ $thCl: #DD366F;
     }
 
     .button-hover-gradient {
-      background: linear-gradient(180deg, #DD366F 0%, #EF5D8F 100%);
+      background: linear-gradient(180deg, #7A1B38 0%, #BB4C6E 100%);
     }
 
     .line-border {
@@ -118,13 +124,13 @@ $thCl: #DD366F;
 
     .card__info {
       li:before {
-        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot-admin.svg');
+        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot-eyebrow.svg');
       }
     }
 
     .process-modules__item {
       li:before {
-        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot-admin.svg');
+        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot-eyebrow.svg');
       }
     }
 
@@ -152,10 +158,6 @@ $thCl: #DD366F;
 
     .process-modules__title {
       background: #fef9fb;
-    }
-
-    .path__top-wave path{
-      fill: #DD366F;
     }
 
     .process__modules {

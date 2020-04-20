@@ -46,4 +46,20 @@
       height: calc(100% + 14px);
     }
   }
+
+  &--for-who {
+    &:before {
+      left: -10px;
+      top: -10px;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+    }
+
+    &:after {
+      left: -5px;
+      top: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+    }
+  }
 }

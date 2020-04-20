@@ -48,6 +48,7 @@ import '@svg/dot-admin.svg';
 import '@svg/big-dot.svg';
 import '@svg/big-dot-admin.svg';
 import '@svg/dots-bg-admin.svg';
+import '@svg/dot-eyebrow.svg';
 
 // Scripts
 import '@js/modules/mobile-menu';
