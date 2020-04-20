@@ -1,0 +1,17 @@
+extends template/main
+
+block variables
+    - var title = 'Главная страница'
+    - var theme = 'marketing'
+
+block content
+    include ./modules/for-who
+    include ./modules/about
+    include ./modules/free-consultation
+    include ./modules/process
+    include ./modules/result
+    include ./modules/path
+    include ./modules/reviews
+    include ./modules/gallery
+    include ./modules/guarantees
+    include ./modules/pricing

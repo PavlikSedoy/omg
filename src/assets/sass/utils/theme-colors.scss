@@ -19,7 +19,7 @@
     // End flowers bg
 
     // Waves
-    .middle-wave {
+    .middle-wave, .bottom-wave--color {
       svg {
         path {
           fill: #FCFBFF;
@@ -190,3 +190,8 @@
 
 @import "../modules/theme-colors/admin";
 @import "../modules/theme-colors/eyebrow";
+@import "../modules/theme-colors/lish";
+@import "../modules/theme-colors/man";
+@import "../modules/theme-colors/hair";
+@import "../modules/theme-colors/manager";
+@import "../modules/theme-colors/marketing";

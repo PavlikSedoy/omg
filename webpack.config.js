@@ -89,6 +89,31 @@ const plugins = () => {
       filename: 'eyebrow.html',
       inject: true
     }),
+    new HtmlWebpackPlugin({
+      template: './pug/lish.pug',
+      filename: 'lish.html',
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './pug/man.pug',
+      filename: 'man.html',
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './pug/hair.pug',
+      filename: 'hair.html',
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './pug/manager.pug',
+      filename: 'manager.html',
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './pug/marketing.pug',
+      filename: 'marketing.html',
+      inject: true
+    }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {
