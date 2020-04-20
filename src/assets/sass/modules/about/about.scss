@@ -62,12 +62,16 @@
   }
   
   &__icon-wr {
-    flex-basis: 110px;
-    height: 110px;
+    margin: 10px;
+    margin-right: 0;
+    flex-basis: 80px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   &__in {

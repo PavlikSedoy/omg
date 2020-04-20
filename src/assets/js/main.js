@@ -17,7 +17,7 @@ import '@images/for-who/item-dots.png';
 import '@images/for-who/bg.jpg';
 import '@images/about/face-icon.svg';
 import '@images/about/item-bg.svg';
-import '@images/about/dots-bg.svg';
+import '@svg/dots-bg.svg';
 import '@images/about/section-bg.png';
 import '@images/free-consultation/bg.png';
 import '@images/process/Photo.jpg';
@@ -42,6 +42,12 @@ import '@images/result/icon-3.svg';
 import '@images/result/icon-4.svg';
 import '@images/result/icon-5.svg';
 import '@images/result/icon-6.svg';
+import '@svg/title-dotes.svg';
+import '@svg/title-dots-admin.svg';
+import '@svg/dot-admin.svg';
+import '@svg/big-dot.svg';
+import '@svg/big-dot-admin.svg';
+import '@svg/dots-bg-admin.svg';
 
 // Scripts
 import '@js/modules/mobile-menu';

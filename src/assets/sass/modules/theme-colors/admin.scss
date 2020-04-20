@@ -1,11 +1,12 @@
-// Theme colors
+$thCl: #DD366F;
+
 .theme {
-  // for purple
-  &--purple {
+  // For admin
+  &--admin {
     // Angles dots
     .angles {
       path {
-        fill: $purple;
+        fill: $thCl;
       }
     }
     // And angles dots
@@ -13,7 +14,7 @@
     // Flowers bg
     .flower-bg {
       path {
-        fill: $purple;
+        fill: $thCl;
       }
     }
     // End flowers bg
@@ -22,7 +23,7 @@
     .middle-wave {
       svg {
         path {
-          fill: #FCFBFF;
+          fill: #fef9fb;
         }
       }
     }
@@ -30,42 +31,42 @@
 
     // Free consultation
     .free-consultation:before {
-      background: #FCFBFF;
+      background: #fef9fb;
     }
 
     .free-consultation__bg {
       path {
-        fill: $purple;
+        fill: $thCl;
         opacity: .1;
       }
     }
-    
+
     .color-bg {
-      background: #FCFBFF;
+      background: #fef9fb;
     }
 
     .before-bg {
       &:before {
-        background: $purple;
+        background: $thCl;
       }
     }
 
     .hover-color {
       &:hover, &:active, &:focus {
-        color: $purple;
+        color: $thCl;
       }
     }
 
     .hover-bg {
       &:hover {
-        background: $purple;
+        background: $thCl;
       }
     }
 
     .swiper-button-prev, .swiper-button-next {
       svg {
         path {
-          fill: $purple;
+          fill: $thCl;
         }
       }
 
@@ -80,32 +81,32 @@
 
     .input-border {
       @include cubic-first;
-      border: 1px solid rgba($purple, .25);
+      border: 1px solid rgba($thCl, .25);
 
       &:hover, &:focus, &:active {
-        border-color: $purple;
+        border-color: $thCl;
       }
     }
 
     .button-gradient {
-      background: linear-gradient(180deg, #5B4696 0%, #9582CC 100%);
+      background: linear-gradient(180deg, #DD366F 0%, #EF5D8F 100%);
     }
 
     .bg {
-      background: $purple;
+      background: $thCl;
     }
 
     .button-hover-gradient {
-      background: linear-gradient(180deg, #3C2E65 0%, #635194 100%);
+      background: linear-gradient(180deg, #DD366F 0%, #EF5D8F 100%);
     }
 
     .line-border {
-      border-color: rgba($purple, .3);
+      border-color: rgba($thCl, .3);
     }
 
     .border-out {
       &:before, &:after {
-        border-color: rgba($purple, .3);
+        border-color: rgba($thCl, .3);
       }
 
       &--before {
@@ -117,22 +118,22 @@
 
     .card__info {
       li:before {
-        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot.svg');
+        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot-admin.svg');
       }
     }
 
     .process-modules__item {
       li:before {
-        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot.svg');
+        background: 50% 50%/contain no-repeat url('/assets/images/svg/dot-admin.svg');
       }
     }
 
     .section-title__count-image {
-      background: 50% 50%/contain no-repeat url('/assets/images/svg/title-dotes.svg');
+      background: 50% 50%/contain no-repeat url('/assets/images/svg/title-dots-admin.svg');
     }
 
     .color {
-      color: $purple;
+      color: $thCl;
     }
 
     .section-title__count-val {
@@ -142,7 +143,7 @@
     }
 
     .for-who__item-number {
-      background: 50% 50%/contain no-repeat url("/assets/images/svg/big-dot.svg");
+      background: 50% 50%/contain no-repeat url("/assets/images/svg/big-dot-admin.svg");
     }
 
     .for-who__item-image-bg {
@@ -150,46 +151,48 @@
     }
 
     .about-item__bg--dots {
-      background: 100% 100%/100% no-repeat url("/assets/images/svg/dots-bg.svg");
+      background: 100% 100%/100% no-repeat url("/assets/images/svg/dots-bg-admin.svg");
     }
 
     .process-modules__title {
-      background: #FCFBFF;
+      background: #fef9fb;
+    }
+
+    .path__top-wave path{
+      fill: #DD366F;
     }
 
     .process__modules {
-      border-color: rgba($purple, .3);
+      border-color: rgba($thCl, .3);
     }
 
     .process-modules__item {
-      border-color: rgba($purple, .3);;
+      border-color: rgba($thCl, .3);;
     }
 
     .circle-item {
-      background: $purple;
+      background: $thCl;
 
       &:before, &:after {
-        background: $purple;
+        background: $thCl;
       }
     }
 
     .path, .reviews {
-      background: rgba($purple, .03);
+      background: rgba($thCl, .03);
     }
 
     .tab.active {
-      background: rgba($purple, .3);
+      background: rgba($thCl, .3);
     }
 
     .gallery-hover {
-      background: rgba($purple, .7);
+      background: rgba($thCl, .7);
     }
 
     .modal__close {
       background: #F7F7F7;
     }
   }
+  // End for admin
 }
-// End theme colors
-
-@import "../modules/theme-colors/admin";

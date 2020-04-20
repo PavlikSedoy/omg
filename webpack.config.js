@@ -79,6 +79,11 @@ const plugins = () => {
       filename: 'index.html',
       inject: true
     }),
+    new HtmlWebpackPlugin({
+      template: './pug/admin.pug',
+      filename: 'admin.html',
+      inject: true
+    }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {
